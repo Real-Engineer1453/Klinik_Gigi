@@ -1,3 +1,14 @@
+<h3>Login Member</h3>
+
+@if(Session::has('notification_register'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <?= session('notification_register') ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+@endif
+
 <form class="form" method="POST" action="{{route('auth.login_member')}}">
     @csrf
     <div class="card-body">
@@ -23,5 +34,6 @@
     </div>
     <div class="modal-footer my-4 justify-content-center">
         <button type="submit" class="btn btn-info  btn-wd ">Login</button>
+        <a href="{{route('signin_member')}}">Signin</a>
     </div>
 </form>
