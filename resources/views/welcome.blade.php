@@ -86,13 +86,9 @@
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('login_member')}}">Login</a>
+                    <a href="{{route('signin_member')}}">Signin</a>
+                    <a href="https://github.com/Real-Engineer1453/Fundamental_App">GitHub</a>
                 </div>
             </div>
         </div>

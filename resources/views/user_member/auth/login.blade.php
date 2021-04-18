@@ -1,4 +1,5 @@
 <h3>Login Member</h3>
+<a href="{{route('home')}}">Home</a>
 
 @if(Session::has('notification_register'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">

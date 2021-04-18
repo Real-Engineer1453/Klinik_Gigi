@@ -1,4 +1,6 @@
 <h3>Signin Member</h3>
+<a href="{{route('home')}}">Home</a>
+
 <form class="form" method="POST" action="{{route('auth.signin_member')}}">
     @csrf
     <div class="card-body">

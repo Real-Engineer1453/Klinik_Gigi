@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 //Auth
 Route::get('login_member', 'UserMember\Auth\LoginController@index')->name('login_member');
