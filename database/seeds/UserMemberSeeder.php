@@ -15,7 +15,23 @@ class UserMemberSeeder extends Seeder
         $faker = Factory::create();
         $data = new \App\Repositories\UserMemberRepository();
 
-        for ($i=1;$i<=10;$i++)
+        $data->create([
+            'name' => "zufar",
+            'email' => "zufar@gmail.com",
+            'password' => 'user_member',
+            'address' => $faker->address,
+            'phone_number' => $faker->phoneNumber
+        ]);
+
+        $data->create([
+            'name' => "auzan",
+            'email' => "auzan@gmail.com",
+            'password' => 'user_member',
+            'address' => $faker->address,
+            'phone_number' => $faker->phoneNumber
+        ]);
+
+        for ($i=1;$i<=3;$i++)
         {
             $data->create([
                 'name' => $faker->name,
