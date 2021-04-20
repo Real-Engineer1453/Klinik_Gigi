@@ -52,6 +52,12 @@ return [
             'provider' => 'user_member',
             'hash' => false,
         ],
+
+        'user_officer' => [
+            'driver' => 'session',
+            'provider' => 'user_officer',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -85,6 +91,11 @@ return [
         'user_member'  => [
             'driver' => 'eloquent',
             'model'  => App\ModelApp\UserMemberModel::class,
+        ],
+
+        'user_officer'  => [
+            'driver' => 'eloquent',
+            'model'  => App\ModelApp\UserOfficerModel::class,
         ],
     ],
 
