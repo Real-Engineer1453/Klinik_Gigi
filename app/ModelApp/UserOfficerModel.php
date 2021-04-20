@@ -2,9 +2,10 @@
 
 namespace App\ModelApp;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class UserOfficerModel extends Model
+class UserOfficerModel extends Authenticatable
 {
     use SoftDeletes;
 

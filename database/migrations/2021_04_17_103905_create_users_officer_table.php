@@ -15,11 +15,13 @@ class CreateUsersOfficerTable extends Migration
     {
         Schema::create('users_officer', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('username')->unique();
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('level_access');
+            $table->string('address')->nullable();
             $table->string('phone_number')->unique();
             $table->rememberToken();
             $table->timestamps();
