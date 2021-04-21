@@ -24,6 +24,7 @@ class CreateUsersOfficerTable extends Migration
             $table->string('address')->nullable();
             $table->string('phone_number')->unique();
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

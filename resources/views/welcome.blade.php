@@ -86,7 +86,8 @@
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="{{route('login_member')}}">Login</a>
+                    <a href="{{route('login_officer')}}">Login Officer</a>
+                    <a href="{{route('login_member')}}">Login Member</a>
                     <a href="{{route('signin_member')}}">Signin</a>
                     <a href="https://github.com/Real-Engineer1453/Fundamental_App">GitHub</a>
                 </div>
