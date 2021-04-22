@@ -9,6 +9,10 @@
         <td>: {{$data->username}}</td>
     </tr>
     <tr>
+        <td>Level Access</td>
+        <td>: {{$data->level_access}}</td>
+    </tr>
+    <tr>
         <td>Address</td>
         <td>: {{$data->address}}</td>
     </tr>
@@ -21,6 +25,6 @@
         <td>: {{$data->phone_number}}</td>
     </tr>
     <tr>
-        <td><a href="{{route('auth.logout_member')}}">Logout</a></td>
+        <td><a href="{{route('auth.logout_officer')}}">Logout</a></td>
     </tr>
 </table>
