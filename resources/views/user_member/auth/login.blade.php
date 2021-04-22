@@ -50,7 +50,7 @@ Registrasi
             <form class="form" method="POST" action="{{route('auth.login_member')}}">
                 @csrf
                 <div class="form-group">
-                <label for="email">Username</label>
+                <label for="username">Username</label>
                 <input class="form-control" type="text" name="username"
                 id="username"
                 value="{{ old('username') }}"/>
