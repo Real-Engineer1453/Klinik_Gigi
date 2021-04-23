@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- G-Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --background: #f8f8f8;
+        --dark: #303032;
+      }
+
+      .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background);
+      }
+
+      .box {
+        position: relative;
+        background: var(--dark);
+        border: 0.15rem solid var(--dark);
+        width: 8rem;
+        height: 8rem;
+        outline: 0;
+        overflow: hidden;
+        transform: translateY(200%);
+      }
+
+      .box::before {
+        content: 'M';
+        font-size: 3.5rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--background);
+      }
+
+      .box::after {
+        content: '';
+        position: absolute;
+        bottom: -50%;
+        left: -50%;
+        height: 200%;
+        width: 200%;
+        background: var(--background);
+        border-radius: 45%;
+        animation: spin 5s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        100% {
+          transform: translateY(-100%) rotate(500deg);
+        }
+      }
+    </style>
+    <title>RE</title>
+  </head>
+  <body class="user">
+    <section class="container">
+      <nav class="navbar navbar-user navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Mailmaker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Hello Kamu</a>
+            </li>
+          </ul>
+          <p class="pr-3 pt-3">Auzan</p>
+          <button class="btn-primary">Logout</button>
+        </div>
+      </nav>
+    </section>
+    <main class="">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="box"></div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/retina/retina.min.js"></script>
+  </body>
+</html>

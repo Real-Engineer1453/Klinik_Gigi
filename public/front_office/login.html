@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- G-Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>RE</title>
+  </head>
+
+  <body>
+    <main class="login-container">
+      <div class="container">
+        <div class="row page-login d-flex align-items-center">
+          <div class="section-left col-12 col-md-6">
+            <div class="animate__animated animate__fadeInRight">
+              <h1 class="mb-4">
+                Beyond the future <br />
+                Your CV with us
+              </h1>
+            </div>
+            <div class="row kotak">
+              <div class="col-md-3 animate__animated animate__flipInX animate__delay-1s animate__slow">
+                <div class="kotak-1"></div>
+              </div>
+              <div class="col-md-3">
+                <div class="kotak-2 animate__animated animate__flipInY animate__delay-2s animate__slow"></div>
+              </div>
+            </div>
+            <div class="row kotak">
+              <div class="col-md-3">
+                <div class="kotak-3 animate__animated animate__flipInY animate__delay-3s animate__slow"></div>
+              </div>
+              <div class="col-md-3">
+                <div class="kotak-4 animate__animated animate__flipInX animate__delay-4s animate__slow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="section-right col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center">
+                  <p class="greet mb-4">Hello Kamu</p>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email Adress</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                  <button type="submit" class="btn btn-login btn-block mt-4">
+                    <a href="index.html" style="text-decoration: none">Sign In</a>
+                  </button>
+                  <button type="submit" class="btn btn-signup btn-block">
+                    <a href="registrasi.html" style="text-decoration: none"> Sign Up </a>
+                  </button>
+                  <a href="index.html" class="btn btn-success btn-google btn-user btn-block"> <i class="fab fa-google fa-fw"></i> Login with Google </a>
+                  <a href="index.html" class="btn btn-danger btn-facebook btn-user btn-block"> <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook </a>
+                  <p class="text-center mt-3">
+                    <a class="reset-pass" href="#">Saya Lupa Password</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/retina/retina.min.js"></script>
+  </body>
+</html>

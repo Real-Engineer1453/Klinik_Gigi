@@ -1,0 +1,153 @@
+:root {
+  --background: #f8f8f8;
+  --dark: #303032;
+}
+
+@media (min-width: 992px) {
+  .login-container {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffffff), color-stop(40%, #e4e6eb));
+    background: linear-gradient(90deg, #ffffff 60%, #e4e6eb 40%);
+    /* background-image: linear-gradient(to right, #ffffff, #efefef, #e0e0e0, #d0d0d0, #c1c1c1); */
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .regist-container {
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffffff), color-stop(40%, #e4e6eb)); */
+    /* background: linear-gradient(90deg, #ffffff 60%, #e4e6eb 40%); */
+    background-image: linear-gradient(to right, #ffffff, #efefef, #e0e0e0, #d0d0d0, #c1c1c1);
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.navbar-user {
+  background-color: transparent;
+}
+
+.page-login {
+  height: 100vh;
+}
+
+.page-login .btn-login {
+  border-radius: 4px;
+  background-color: #ff9e53;
+  color: #fff;
+}
+
+.page-login .btn-login a {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.page-login .btn-login:hover {
+  background-color: #fabc8d;
+  color: #fff;
+}
+
+.page-login .btn-signup {
+  border-radius: 4px;
+  background-color: #006dfc;
+  color: #fff;
+}
+
+.page-login .btn-signup a {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.page-login .btn-signup:hover {
+  background-color: #4894f7;
+  color: #fff;
+}
+
+.page-login .btn-login {
+  text-decoration: none;
+}
+.page-login .btn-signup {
+  text-decoration: none;
+}
+
+.section-left {
+  margin-bottom: 50px;
+}
+
+.page-login .section-left h1 {
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  color: #071c4d;
+}
+
+.page-login .section-right .reset-pass {
+  font-family: Assistant;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+  color: #bfbfbf;
+}
+
+.page-login .section-right .reset-pass:hover {
+  color: #6e6e6e;
+}
+
+.greet {
+  font-size: 30px;
+  font-weight: bold;
+  color: #071c4d;
+}
+
+.kotak-1 {
+  width: 150px;
+  height: 170px;
+  background-color: #6e6e6e;
+}
+
+.kotak-2 {
+  width: 150px;
+  height: 150px;
+  background-color: #6e6e6e;
+  margin-left: 50px;
+}
+
+.kotak-3 {
+  width: 150px;
+  height: 140px;
+  background-color: #6e6e6e;
+  margin-top: 20px;
+}
+
+.kotak-4 {
+  width: 150px;
+  height: 160px;
+  background-color: #6e6e6e;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .kotak {
+    display: none;
+  }
+
+  .page-login .section-left h1 {
+    font-size: 35px;
+  }
+}
+
+.page-regist {
+  height: 100vh;
+}
+
+.page-regist .btn-signup {
+  border-radius: 4px;
+  background-color: #006dfc;
+  color: #fff;
+}
+
+.page-regist .btn-signup:hover {
+  background-color: #4894f7;
+  color: #fff;
+}
