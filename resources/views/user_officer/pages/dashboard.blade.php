@@ -5,6 +5,8 @@ Dashboard
 @endsection
 
 @section('content')
+
+{{-- SIDEBAR --}}
 <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-left ms-3" id="sidenav-main">
     <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute right-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -53,7 +55,7 @@ Dashboard
                 </g>
             </svg>
             </div>
-            <span class="nav-link-text ms-1">Tables</span>
+            <span class="nav-link-text ms-1">Data Member</span>
         </a>
         </li>
         <li class="nav-item">
@@ -73,7 +75,7 @@ Dashboard
                 </g>
             </svg>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">Kategori Peminatan</span>
         </a>
         </li>
         <li class="nav-item">
@@ -94,10 +96,10 @@ Dashboard
                 </g>
             </svg>
             </div>
-            <span class="nav-link-text ms-1">RTL</span>
+            <span class="nav-link-text ms-1">Informasi Berita</span>
         </a>
         </li>
-        <li class="nav-item mt-3">
+        {{-- <li class="nav-item mt-3">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
         </li>
         <li class="nav-item">
@@ -122,7 +124,7 @@ Dashboard
         </a>
         </li>
         <li class="nav-item">
-        <a class="nav-link  " href="{{route('auth.logout_officer')}}">
+        <a class="nav-link  " href="#">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>document</title>
@@ -164,8 +166,8 @@ Dashboard
         </a>
         </li>
     </ul>
-    </div>
-    <div class="sidenav-footer mx-3 mt-3 pt-3">
+    </div> --}}
+    {{-- <div class="sidenav-footer mx-3 mt-3 pt-3">
     <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
         <div class="full-background" style="background-image: url('back_office/assets/img/curved-images/white-curved.jpeg')"></div>
         <div class="card-body text-left p-3 w-100">
@@ -177,7 +179,7 @@ Dashboard
         <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard" target="_blank" class="btn btn-white btn-sm w-100 mb-0">Documentation</a>
         </div>
     </div>
-    </div>
+    </div> --}}
 </aside>
 
 <main class="main-content mt-1 border-radius-lg">
