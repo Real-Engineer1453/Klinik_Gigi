@@ -14,13 +14,6 @@ class UserMemberController extends Controller
     public function __construct(UserMemberRepository $userMemberRepository)
     {
         $this->userMemberRepository = $userMemberRepository;
-//        $this->middleware(function($request, $next)
-//        {
-////            if (auth()->guard('user_officer')->check()) return $next($request);
-//
-////            abort(403, 'Anda tidak memiliki cukup hak akses');
-//        }
-//        );
     }
 
     public function index()
