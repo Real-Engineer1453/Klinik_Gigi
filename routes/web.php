@@ -37,5 +37,6 @@ Route::get('logout_officer', 'UserOfficer\Auth\LoginController@logout')->name('a
 Route::middleware(['auth.user_officer'])->name('user_officer.')->prefix('user_officer')->group(function () {
     // Dashboard
     Route::get('dashboard', 'UserOfficer\DashboardController@index')->name('dashboard');
+    Route::resource('user_member', 'UserOfficer\UserMemberController');
 });
 

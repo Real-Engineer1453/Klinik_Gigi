@@ -39,6 +39,11 @@ class UserMemberRepository
         return UserMemberModel::where('remember_token', $token)->first();
     }
 
+    public function get_paginate($paginate)
+    {
+        return UserMemberModel::orderBy('id', "desc")->paginate($paginate);
+    }
+
     public function getById($id)
     {
         return UserMemberModel::where('id', '=', $id)->get();
