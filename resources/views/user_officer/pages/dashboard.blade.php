@@ -5,8 +5,9 @@ Dashboard
 @endsection
 
 @section('content')
-    {{-- Counting Data --}}
+
 <div class="container-fluid py-4">
+    {{-- Counting Data --}}
     <div class="row">
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
             <div class="card">
@@ -98,6 +99,7 @@ Dashboard
         </div>
     </div>
 
+    {{-- Chart Diagram --}}
     <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
         <div class="card">
@@ -128,7 +130,7 @@ Dashboard
                         </g>
                         </svg>
                     </div>
-                    <p class="text-xs mt-1 mb-0 font-weight-bold">Users</p>
+                    <p class="text-xs mt-1 mb-0 font-weight-bold">PL</p>
                     </div>
                     <h4 class="font-weight-bolder">36K</h4>
                     <div class="progress w-75">
@@ -154,9 +156,9 @@ Dashboard
                         </g>
                         </svg>
                     </div>
-                    <p class="text-xs mt-1 mb-0 font-weight-bold">Clicks</p>
+                    <p class="text-xs mt-1 mb-0 font-weight-bold">SMBK</p>
                     </div>
-                    <h4 class="font-weight-bolder">2m</h4>
+                    <h4 class="font-weight-bolder">20K</h4>
                     <div class="progress w-75">
                     <div class="progress-bar bg-dark w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -178,9 +180,9 @@ Dashboard
                         </g>
                         </svg>
                     </div>
-                    <p class="text-xs mt-1 mb-0 font-weight-bold">Sales</p>
+                    <p class="text-xs mt-1 mb-0 font-weight-bold">Wirausaha</p>
                     </div>
-                    <h4 class="font-weight-bolder">435$</h4>
+                    <h4 class="font-weight-bolder">435</h4>
                     <div class="progress w-75">
                     <div class="progress-bar bg-dark w-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -203,7 +205,7 @@ Dashboard
                         </g>
                         </svg>
                     </div>
-                    <p class="text-xs mt-1 mb-0 font-weight-bold">Items</p>
+                    <p class="text-xs mt-1 mb-0 font-weight-bold">Ngopi</p>
                     </div>
                     <h4 class="font-weight-bolder">43</h4>
                     <div class="progress w-75">
