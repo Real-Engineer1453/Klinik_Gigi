@@ -220,7 +220,7 @@ Dashboard
         <div class="col-lg-7">
         <div class="card">
             <div class="card-header pb-0">
-            <h6>Sales overview</h6>
+            <h6>Member Aktifitas</h6>
             <p class="text-sm">
                 <i class="fa fa-arrow-up text-success"></i>
                 <span class="font-weight-bold">4% more</span> in 2021

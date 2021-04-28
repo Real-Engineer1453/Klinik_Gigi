@@ -5,6 +5,7 @@ Login
 @endsection
 
 @section('content')
+
 @if(Session::has('notification_register'))
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <?= session('notification_register') ?>
@@ -68,7 +69,7 @@ Login
                         @error('username')
                         <span class="bmd text-danger pl-5">{{ $message }}</span>
                         @enderror
-
+                        <br>
                         <label>Password</label>
                         <div class="mb-3">
                             <input type="password" name="password" placeholder="Password" id="password" autocomplete="off"
