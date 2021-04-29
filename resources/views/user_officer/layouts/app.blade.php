@@ -39,7 +39,7 @@
 
     @yield('content')
 
-    @include('user_officer.includes.footer')
+    @stack('footer')
 
 </main>
 
