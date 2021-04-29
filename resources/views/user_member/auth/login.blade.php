@@ -1,7 +1,7 @@
 @extends('user_member.layouts.login')
 
 @section('title')
-Registrasi
+Sign In
 @endsection
 
 @section('content')
@@ -14,77 +14,96 @@ Registrasi
     </div>
 @endif
 
-<main class="login-container">
-    <div class="container">
-    <div class="row page-login d-flex align-items-center">
-        <div class="section-left col-12 col-md-6">
-        <div class="animate__animated animate__fadeInRight">
-            <h1 class="mb-4">
-            Beyond the future <br />
-            Your CV with us
-            </h1>
-        </div>
-        <div class="row kotak">
-            <div class="col-md-3 animate__animated animate__flipInX animate__delay-1s animate__slow">
-            <div class="kotak-1"></div>
-            </div>
-            <div class="col-md-3">
-            <div class="kotak-2 animate__animated animate__flipInY animate__delay-2s animate__slow"></div>
-            </div>
-        </div>
-        <div class="row kotak">
-            <div class="col-md-3">
-            <div class="kotak-3 animate__animated animate__flipInY animate__delay-3s animate__slow"></div>
-            </div>
-            <div class="col-md-3">
-            <div class="kotak-4 animate__animated animate__flipInX animate__delay-4s animate__slow"></div>
-            </div>
-        </div>
-        </div>
-        <div class="section-right col-12 col-md-4">
-        <div class="card">
-            <div class="card-body">
-            <div class="text-center">
-                <p class="greet mb-4">Hello Kamu</p>
-            </div>
-            <form class="form" method="POST" action="{{route('auth.login_member')}}">
-                @csrf
-                <div class="form-group">
-                <label for="username">Username</label>
-                <input class="form-control" type="text" name="username"
-                id="username"
-                value="{{ old('username') }}"/>
-                </div>
-                @error('username')
-                <span class="bmd text-danger pl-5">{{ $message }}</span>
-                @enderror
+<section>
+    <div class="page-header section-height-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+                    <div class="card card-plain">
+                        <div class="card-header pb-0 text-left">
+                            <h4 class="font-weight-bolder">Sign In</h4>
+                            <p class="mb-0">Enter your email and password to sign in</p>
+                        </div>
+                    <div class="card-body">
+                        <form role="form" class="form" method="POST" action="{{route('auth.login_member')}}">
+                        @csrf
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg" type="text" name="username" id="username" value="{{ old('username') }}">
+                        </div>
+                        @error('username')
+                        <span class="bmd text-danger pl-5">{{ $message }}</span>
+                        @enderror
 
-                <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" autocomplete="off"
-                class="form-control" value="{{old('password')}}"/>
-                </div>
-                @error('password')
-                <span class="bmd text-danger pl-5">{{ $message }}</span>
-                @enderror
+                        <div class="mb-3">
+                            <input type="password" name="password" id="password" autocomplete="off" class="form-control form-control-lg" value="{{old('password')}}">
+                        </div>
+                        @error('password')
+                        <span class="bmd text-danger pl-5">{{ $message }}</span>
+                        @enderror
 
-                {{-- Button --}}
-                <button type="submit" class="btn btn-login btn-block mt-4">
-                Sign In
-                </button>
-                <button type="submit" class="btn btn-signup btn-block">
-                <a href="{{route('signin_member')}}" style="text-decoration: none"> Sign Up </a>
-                </button>
-                <a href="index.html" class="btn btn-success btn-google btn-user btn-block"> <i class="fab fa-google fa-fw"></i> Login with Google </a>
-                <a href="index.html" class="btn btn-danger btn-facebook btn-user btn-block"> <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook </a>
-                <p class="text-center mt-3">
-                <a class="reset-pass" href="#">Saya Lupa Password</a>
-                </p>
-            </form>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                        <p class="mb-4 text-sm mx-auto">
+                        Don't have an account?
+                        <a href="#;" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+                    <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+                    <img src="{{ url ('front_office/assets/img/shapes/pattern-lines.svg')}}" alt="pattern-lines" class="position-absolute opacity-4 start-0">
+                    <div class="position-relative">
+                        <img class="max-width-500 w-100 position-relative z-index-2" src="{{ url ('front_office/assets/img/illustrations/chat.png')}}">
+                    </div>
+                    <h4 class="mt-5 text-white font-weight-bolder">"Attention is the new currency"</h4>
+                    <p class="text-white">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     </div>
-    </div>
-    </main>
+</section>
 @endsection
+
+@push('navbar')
+<div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg  blur blur-rounded top-0  z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+        <div class="container-fluid">
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </span>
+            </button>
+
+            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bolder d-flex align-items-center me-2 active" aria-current="page" href=".#">
+                        WELCOME TO PKS MUDA DIGITAL BASECAMP
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- End Navbar -->
+    </div>
+    </div>
+</div>
+@endpush
+
+
+
