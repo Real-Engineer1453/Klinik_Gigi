@@ -1,7 +1,7 @@
 @extends('user_officer.layouts.app')
 
 @section('title')
-Dashboard
+Data Statistik
 @endsection
 
 @section('content')

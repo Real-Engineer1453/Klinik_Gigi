@@ -7,7 +7,7 @@
                     document.write(new Date().getFullYear())
                     </script>,
                     made with <i class="fa fa-heart"></i> by
-                    <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
+                    <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
                     for a better Partai 4.0.
                 </div>
             </div>
