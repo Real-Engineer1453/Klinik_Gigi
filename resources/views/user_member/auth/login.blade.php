@@ -28,14 +28,14 @@ Sign In
                         <form role="form" class="form" method="POST" action="{{route('auth.login_member')}}">
                         @csrf
                         <div class="mb-3">
-                            <input class="form-control form-control-lg" type="text" name="username" id="username" value="{{ old('username') }}">
+                            <input class="form-control form-control-lg" placeholder="Email or Username" type="text" name="username" id="username" value="{{ old('username') }}">
                         </div>
                         @error('username')
                         <span class="bmd text-danger pl-5">{{ $message }}</span>
                         @enderror
 
                         <div class="mb-3">
-                            <input type="password" name="password" id="password" autocomplete="off" class="form-control form-control-lg" value="{{old('password')}}">
+                            <input type="password" name="password" placeholder="Password" id="password" autocomplete="off" class="form-control form-control-lg" value="{{old('password')}}">
                         </div>
                         @error('password')
                         <span class="bmd text-danger pl-5">{{ $message }}</span>
