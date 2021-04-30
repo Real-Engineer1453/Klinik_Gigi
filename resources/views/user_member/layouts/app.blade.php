@@ -31,12 +31,12 @@ Coded by www.creative-tim.com
     @include('user_member.includes.navbar')
 
     <header class="header-2">
-        <div class="page-header section-height-75 relative" style="background-image: url('front_office/assets/img/curved-images/curved.jpg')">
+        <div class="page-header section-height-75 relative" style="background-image: url('{{ asset('front_office/assets/img/curved-images/curved.jpg')}}')">
         <div class="container">
             <div class="row">
             <div class="col-lg-7 text-center mx-auto">
-                <h1 class="text-white pt-3 mt-n5">Soft UI Design System</h1>
-                <p class="lead text-white mt-3">Free & Open Source Web UI Kit built over Bootstrap 5. <br /> Join over 1.4 million developers around the world. </p>
+                <h1 class="text-white pt-3 mt-n5">PKS MUDA</h1>
+                <p class="lead text-white mt-3">Digital Basecamp PKS Muda Prov. DIY <br /> Join over 1.4 million PKS Muda around the world. </p>
             </div>
             </div>
         </div>
@@ -66,24 +66,24 @@ Coded by www.creative-tim.com
                 <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
                     <h1 class="text-gradient text-primary"><span id="state1" countTo="70">0</span>+</h1>
-                    <h5 class="mt-3">Coded Elements</h5>
-                    <p class="text-sm">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+                    <h5 class="mt-3">Joined</h5>
+                    <p class="text-sm">Anak Muda sudah bergabung bersama kami</p>
                 </div>
                 <hr class="vertical dark">
                 </div>
                 <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
                     <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
-                    <h5 class="mt-3">Design Blocks</h5>
-                    <p class="text-sm">Mix the sections, change the colors and unleash your creativity</p>
+                    <h5 class="mt-3">Program</h5>
+                    <p class="text-sm">Banyak program yang akan kami jalankan</p>
                 </div>
                 <hr class="vertical dark">
                 </div>
                 <div class="col-md-4">
                 <div class="p-3 text-center">
                     <h1 class="text-gradient text-primary" id="state3" countTo="4">0</h1>
-                    <h5 class="mt-3">Pages</h5>
-                    <p class="text-sm">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+                    <h5 class="mt-3">Activities</h5>
+                    <p class="text-sm">Sudah menjadi anggota aktif dengan mendapat KTA</p>
                 </div>
                 </div>
             </div>
