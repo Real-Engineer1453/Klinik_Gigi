@@ -31,7 +31,7 @@ Coded by www.creative-tim.com
     @include('user_member.includes.navbar')
 
     <header class="header-2">
-        <div class="page-header section-height-75 relative" style="background-image: url('./assets/img/curved-images/curved.jpg')">
+        <div class="page-header section-height-75 relative" style="background-image: url('front_office/assets/img/curved-images/curved.jpg')">
         <div class="container">
             <div class="row">
             <div class="col-lg-7 text-center mx-auto">
@@ -215,7 +215,7 @@ Coded by www.creative-tim.com
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="">
         <div class="container">
         <div class="row">
             <div class="row text-center my-sm-5 mt-5">
@@ -470,27 +470,11 @@ Coded by www.creative-tim.com
             </div>
         </div>
         <hr class="horizontal dark my-5">
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-6 ms-auto">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-apple.svg" alt="Logo">
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-facebook.svg" alt="Logo">
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-nasa.svg" alt="Logo">
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-vodafone.svg" alt="Logo">
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
-            <img class="w-100 opacity-6" src="./assets/img/logos/gray-logos/logo-digitalocean.svg" alt="Logo">
-            </div>
-        </div>
         </div>
     </section>
 
-    <section class="py-sm-7" id="download-soft-ui">
+    {{-- Special Thanks --}}
+    <section class="" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative m-3 border-radius-xl overflow-hidden">
         <img src="./assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-6">
         <div class="container py-7 postion-relative z-index-2 position-relative">
@@ -504,47 +488,7 @@ Coded by www.creative-tim.com
             </div>
         </div>
         </div>
-        <div class="container">
-        <div class="row">
-            <div class="col-6 mx-auto">
-            <div class="text-center">
-                <h3 class="mt-5 mb-4">Available on these technologies</h3>
-                <div class="row justify-content-center">
-                <div class="col-lg-2 col-4">
-                    <a href="https://www.creative-tim.com/product/soft-ui-design-system" target="_blank">
-                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap5.jpg" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap 5 - Most popular front-end component library">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a href="javascript:;">
-                    <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/icon-tailwind.jpg" class="img-fluid opacity-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comming soon">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a href="javascript:;">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg" class="img-fluid opacity-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comming soon">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a href="javascript:;">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg" class="img-fluid opacity-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comming soon">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a href="javascript:;">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg" class="img-fluid opacity-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comming soon">
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a href="javascript:;" target="_blank">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg" class="img-fluid opacity-6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comming soon">
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
+
     </section>
 
     <!-- START Section Content W/ 2 images aside of icon title description -->

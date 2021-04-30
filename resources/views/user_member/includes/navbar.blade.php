@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-lg  blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
             <div class="container-fluid">
             <a class="navbar-brand font-weight-bolder ms-sm-3" href="https://demos.creative-tim.com/soft-ui-design-system/index.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-                Soft UI Design System
+                PKS Muda Prov. DIY
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mt-2">
@@ -19,7 +19,7 @@
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
                     Pages
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1">
+                    <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
                     <div class="d-none d-lg-block">
@@ -135,7 +135,7 @@
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                     Blocks
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1">
+                    <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
                     <div class="d-none d-lg-block">
@@ -397,7 +397,7 @@
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                     Docs
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1">
+                    <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
                     <div class="d-none d-lg-block">
@@ -657,13 +657,12 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-lg-auto">
-                    <a class="nav-link nav-link-icon me-2" href="https://github.com/creativetimofficial/soft-ui-design-system" target="_blank">
-                    <i class="fa fa-github me-1"></i>
-                    <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Star us on Github">Github</p>
+                    <a class="nav-link nav-link-icon me-2" href="#" target="_blank">
+                    <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">{{$data->username}}</p>
                     </a>
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
-                    <a href="https://www.creative-tim.com/product/soft-ui-design-system-pro" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Upgrade to Pro</a>
+                    <a href="{{route('auth.logout_member')}}" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Log Out</a>
                 </li>
                 </ul>
             </div>
