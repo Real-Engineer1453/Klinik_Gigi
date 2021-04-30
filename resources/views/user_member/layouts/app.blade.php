@@ -215,6 +215,69 @@ Coded by www.creative-tim.com
         </div>
     </section>
 
+    <section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+                <h3>Design Blocks</h3>
+                <h6 class="text-secondary font-weight-normal pe-3">A selection of page sections that fit perfectly in any combination</h6>
+                </div>
+            </div>
+        <div class="col-lg-9">
+            <div class="row mt-3">
+            <!-- Header -->
+                <div class="col-12">
+                    <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+                        <div class="container border-bottom">
+                            <div class="row justify-space-between py-2">
+                                <div class="col-lg-3 me-auto">
+                                    <p class="lead text-dark pt-1 mb-0">Header</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active" id="preview-header-1">
+                                <iframe width="100%" height="600px" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+                                    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+                                    <!-- Nucleo Icons -->
+                                    <link href="{{ url ('front_office/assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+                                    <link href="{{ url ('front_office/assets/css/nucleo-svg.css')}}" rel="stylesheet" /><link href="https://unpkg.com/soft-ui-design-system@1.0.3/assets/css/soft-design-system.min.css" rel="stylesheet" /><!-- -------- START HEADER 1 w/ text and image on right ------- -->
+                                    <header>
+                                        <div class="page-header section-height-100">
+                                            <div class="oblique position-absolute top-0 h-100 d-md-block d-none">
+                                                <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url({{ asset('front_office/assets/img/curved-images/curved11.jpg')}})"></div>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+                                                            <h1 class="text-gradient text-warning">Your Work With</h1>
+                                                            <h1 class="mb-4">Soft Design System</h1>
+                                                            <p class="lead pe-5 me-5">The time is now for it be okay to be great. People in this world shun people for being nice. </p>
+                                                        <div class="buttons">
+                                                            <button type="button" class="btn bg-gradient-warning mt-4">Get Started</button>
+                                                            <button type="button" class="btn text-warning shadow-none mt-4">Read more</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <!-- -------- END HEADER 1 w/ text and image on right ------- -->'>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
     <section class="">
         <div class="container">
         <div class="row">
