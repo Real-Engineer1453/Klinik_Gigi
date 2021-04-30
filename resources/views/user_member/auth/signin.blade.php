@@ -109,9 +109,9 @@ Registrasi
               </div>
 
               <div class="text-center">
-                <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
+                <button type="submit" class="btn bg-gradient-warning w-100 my-4 mb-2">Sign up</button>
               </div>
-              <p class="text-sm mt-3 mb-0">Already have an account? <a href="{{route('login_member')}}" class="text-dark font-weight-bolder">Sign in</a></p>
+              <p class="text-sm mt-3 mb-0">Already have an account? <a href="{{route('login_member')}}" class="text-warning font-weight-bolder">Sign in</a></p>
             </form>
           </div>
         </div>
@@ -177,9 +177,12 @@ Registrasi
         <div class="row">
             <div class="col-8 mx-auto text-center mt-1">
                 <p class="mb-0 text-secondary">
-                Copyright © <script>
+                © <script>
                     document.write(new Date().getFullYear())
-                </script> Soft by Creative Tim.
+                </script>
+                made with <i class="fa fa-heart"></i> by
+                <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
+                for a better Partai 4.0.
                 </p>
             </div>
         </div>
