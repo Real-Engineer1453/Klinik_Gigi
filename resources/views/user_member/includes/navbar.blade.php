@@ -18,7 +18,7 @@
                 <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100">
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pages
+                    Program
                     <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
@@ -134,7 +134,7 @@
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                    Blocks
+                    Activities
                     <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
@@ -150,7 +150,7 @@
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
                                 <span class="text-sm">See all sections</span>
                                 </div>
-                                <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
+                                <img src="{{ url ('front_office/assets/img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                             </div>
                             </div>
                         </a>
@@ -174,7 +174,7 @@
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Navigation</h6>
                                 <span class="text-sm">See all navigations</span>
                                 </div>
-                                <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
+                                <img src="{{ url ('front_office/assets/img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                             </div>
                             </div>
                         </a>
@@ -201,7 +201,7 @@
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Input Areas</h6>
                                 <span class="text-sm">See all input areas</span>
                                 </div>
-                                <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
+                                <img src="{{ url ('front_office/assets/img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                             </div>
                             </div>
                         </a>
@@ -225,7 +225,7 @@
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Attention Catchers</h6>
                                 <span class="text-sm">See all examples</span>
                                 </div>
-                                <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
+                                <img src="{{ url ('front_office/assets/img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                             </div>
                             </div>
                         </a>
@@ -252,7 +252,7 @@
                                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Elements</h6>
                                 <span class="text-sm">See all elements</span>
                                 </div>
-                                <img src="./assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
+                                <img src="{{ url ('front_office/assets/img/down-arrow.svg')}}" alt="down-arrow" class="arrow">
                             </div>
                             </div>
                         </a>
@@ -396,7 +396,7 @@
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                    Docs
+                    Join
                     <img src="{{ url ('front_office/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-1">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg" aria-labelledby="dropdownMenuDocs">
