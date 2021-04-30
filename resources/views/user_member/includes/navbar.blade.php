@@ -662,7 +662,7 @@
                     </a>
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
-                    <a href="{{route('auth.logout_member')}}" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Log Out</a>
+                    <a href="{{route('auth.logout_member')}}" class="btn btn-sm  bg-gradient-warning  btn-round mb-0 me-1 mt-2 mt-md-0">Log Out</a>
                 </li>
                 </ul>
             </div>

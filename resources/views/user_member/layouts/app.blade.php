@@ -65,7 +65,7 @@ Coded by www.creative-tim.com
             <div class="row">
                 <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
-                    <h1 class="text-gradient text-primary"><span id="state1" countTo="70">0</span>+</h1>
+                    <h1 class="text-gradient text-warning"><span id="state1" countTo="70">0</span>+</h1>
                     <h5 class="mt-3">Joined</h5>
                     <p class="text-sm">Anak Muda sudah bergabung bersama kami</p>
                 </div>
@@ -73,7 +73,7 @@ Coded by www.creative-tim.com
                 </div>
                 <div class="col-md-4 position-relative">
                 <div class="p-3 text-center">
-                    <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">0</span>+</h1>
+                    <h1 class="text-gradient text-warning"> <span id="state2" countTo="15">0</span>+</h1>
                     <h5 class="mt-3">Program</h5>
                     <p class="text-sm">Banyak program yang akan kami jalankan</p>
                 </div>
@@ -81,7 +81,7 @@ Coded by www.creative-tim.com
                 </div>
                 <div class="col-md-4">
                 <div class="p-3 text-center">
-                    <h1 class="text-gradient text-primary" id="state3" countTo="4">0</h1>
+                    <h1 class="text-gradient text-warning" id="state3" countTo="4">0</h1>
                     <h5 class="mt-3">Activities</h5>
                     <p class="text-sm">Sudah menjadi anggota aktif dengan mendapat KTA</p>
                 </div>
@@ -100,7 +100,7 @@ Coded by www.creative-tim.com
                 <div class="col-md-6">
                 <div class="info">
                     <div class="icon icon-sm">
-                    <svg class="text-primary" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="text-warning" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>document</title>
                         <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Rounded-Icons" transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -121,7 +121,7 @@ Coded by www.creative-tim.com
                 <div class="col-md-6">
                 <div class="info">
                     <div class="icon icon-sm">
-                    <svg class="text-primary" width="25px" height="25px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="text-warning" width="25px" height="25px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>shop </title>
                         <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Rounded-Icons" transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -144,7 +144,7 @@ Coded by www.creative-tim.com
                 <div class="col-md-6 mt-3">
                 <div class="info">
                     <div class="icon icon-sm">
-                    <svg class="text-primary" width="25px" height="25px" viewBox="0 0 42 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="text-warning" width="25px" height="25px" viewBox="0 0 42 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>time-alarm</title>
                         <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Rounded-Icons" transform="translate(-2319.000000, -440.000000)" fill="#923DFA" fill-rule="nonzero">
@@ -166,7 +166,7 @@ Coded by www.creative-tim.com
                 <div class="col-md-6 mt-3">
                 <div class="info">
                     <div class="icon icon-sm">
-                    <svg class="text-primary" width="25px" height="25px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="text-warning" width="25px" height="25px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>office</title>
                         <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Rounded-Icons" transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -187,7 +187,7 @@ Coded by www.creative-tim.com
             </div>
             </div>
             <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-            <div class="card card-background card-background-mask-primary tilt" data-tilt>
+            <div class="card card-background card-background-mask-warning tilt" data-tilt>
                 <div class="full-background" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-working.jpg')"></div>
                 <div class="card-body pt-7 text-center">
                 <div class="icon icon-lg up mb-3 mt-3">
@@ -220,7 +220,7 @@ Coded by www.creative-tim.com
         <div class="row">
             <div class="row text-center my-sm-5 mt-5">
             <div class="col-lg-6 mx-auto">
-                <h2 class="text-primary text-gradient mb-0">Boost creativity</h2>
+                <h2 class="text-warning text-gradient mb-0">Boost creativity</h2>
                 <h2 class="">With our coded pages</h2>
                 <p class="lead">The easiest way to get started is to use one of our <br /> pre-built example pages. </p>
             </div>
@@ -305,7 +305,7 @@ Coded by www.creative-tim.com
     <div class="container">
         <div class="row">
         <div class="col-lg-4">
-            <div class="info-horizontal bg-gradient-primary border-radius-xl p-5">
+            <div class="info-horizontal bg-gradient-warning border-radius-xl p-5">
             <div class="icon">
                 <svg class="text-white" width="25px" height="25px" viewBox="0 0 46 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>delivery-fast</title>
@@ -337,7 +337,7 @@ Coded by www.creative-tim.com
         <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
             <div class="info-horizontal bg-gray-100 border-radius-xl p-5">
             <div class="icon">
-                <svg class="text-primary" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="text-warning" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>document</title>
                 <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Rounded-Icons" transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -354,7 +354,7 @@ Coded by www.creative-tim.com
             <div class="description ps-5">
                 <h5>Plugins</h5>
                 <p>Get inspiration and have an overview about the plugins that we used to create the Soft UI Design System.</p>
-                <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/soft-ui-design-system" class="text-primary icon-move-right">
+                <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/soft-ui-design-system" class="text-warning icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
                 </a>
@@ -364,7 +364,7 @@ Coded by www.creative-tim.com
         <div class="col-lg-4 mt-lg-0 mt-4">
             <div class="info-horizontal bg-gray-100 border-radius-xl p-5">
             <div class="icon">
-                <svg class="text-primary" width="25px" height="25px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="text-warning" width="25px" height="25px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>ungroup</title>
                 <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Rounded-Icons" transform="translate(-2170.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -381,7 +381,7 @@ Coded by www.creative-tim.com
             <div class="description ps-5">
                 <h5>Utility Classes</h5>
                 <p>Soft UI Design System is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
-                <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/soft-ui-design-system" class="text-primary icon-move-right">
+                <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/soft-ui-design-system" class="text-warning icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
                 </a>
@@ -397,7 +397,7 @@ Coded by www.creative-tim.com
         <div class="row">
             <div class="col-lg-6 mx-auto text-center">
             <h2 class="mb-0">Trusted by over</h2>
-            <h2 class="text-gradient text-primary mb-3">1,435,000 web developers</h2>
+            <h2 class="text-gradient text-warning mb-3">1,435,000 web developers</h2>
             <p class="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
             </div>
         </div>
@@ -425,7 +425,7 @@ Coded by www.creative-tim.com
             </div>
             </div>
             <div class="col-lg-4 col-md-8 ms-md-auto">
-            <div class="card bg-gradient-primary">
+            <div class="card bg-gradient-warning">
                 <div class="card-body">
                 <div class="author align-items-center">
                     <div class="name">
@@ -476,14 +476,14 @@ Coded by www.creative-tim.com
     {{-- Special Thanks --}}
     <section class="" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative m-3 border-radius-xl overflow-hidden">
-        <img src="./assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-6">
+        <img src="{{ url ('front_office/assets/img/shapes/waves-white.svg')}}" alt="pattern-lines" class="position-absolute start-0 top-md-0 w-100 opacity-6">
         <div class="container py-7 postion-relative z-index-2 position-relative">
             <div class="row">
             <div class="col-md-7 mx-auto text-center">
                 <h3 class="text-white mb-0">Do you love this awesome</h3>
-                <h3 class="text-primary text-gradient mb-4">Design System for Bootstrap 5?</h3>
+                <h3 class="text-warning text-gradient mb-4">Design System for Bootstrap 5?</h3>
                 <p class="text-white mb-5">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in HTML. Start a new project or give an old Bootstrap project a new look!</p>
-                <a href="https://www.creative-tim.com/product/soft-ui-design-system" class="btn btn-primary btn-lg mb-3 mb-sm-0">Download HTML</a>
+                <a href="https://www.creative-tim.com/product/soft-ui-design-system" class="btn btn-warning btn-lg mb-3 mb-sm-0">Download HTML</a>
             </div>
             </div>
         </div>
@@ -497,16 +497,16 @@ Coded by www.creative-tim.com
         <div class="row">
             <div class="col-lg-5 col-md-8 order-2 order-md-2 order-lg-1">
             <div class="position-relative ms-lg-5 mb-0 mb-md-7 mb-lg-0 d-none d-md-block d-lg-block d-xl-block h-75">
-                <div class="bg-gradient-primary w-100 h-100 border-radius-xl position-absolute d-lg-block d-none" alt=""></div>
-                <img src="./assets/img/curved-images/curved11.jpg" class="w-100 border-radius-xl mt-6 ms-lg-5 position-relative z-index-5" alt="">
+                <div class="bg-gradient-warning w-100 h-100 border-radius-xl position-absolute d-lg-block d-none" alt=""></div>
+                <img src="{{ url('front_office/assets/img/curved-images/curved11.jpg')}}" class="w-100 border-radius-xl mt-6 ms-lg-5 position-relative z-index-5" alt="">
             </div>
             </div>
             <div class="col-lg-5 col-md-12 ms-auto order-1 order-md-1 order-lg-1">
             <div class="p-3 pt-0">
-                <div class="icon icon-shape bg-gradient-primary rounded-circle shadow text-center mb-4">
+                <div class="icon icon-shape bg-gradient-warning rounded-circle shadow text-center mb-4">
                 <i class="ni ni-building"></i>
                 </div>
-                <h4 class="text-gradient text-primary mb-0">Special Thanks</h4>
+                <h4 class="text-gradient text-warning mb-0">Special Thanks</h4>
                 <h4 class="mb-4"><a href="https://twitter.com/dnyivn" target="blank" rel="nofollow">3D Images by Danny Ivan</a></h4>
                 <p>We are more than happy to use the great images made by Danny inside Soft UI Design System. They come with a high level of quality and bright colors, fitting perfect with our product's colors.<br><br> Danny is a important designer that is active into the 3D Image space. His war was awarded many times in different categories in Behance, Digital Art or Motion Graphics.</p>
                 <a href="https://www.behance.net/dannyivan" target="blank" rel="nofollow" class="text-dark icon-move-right">Check Danny's work

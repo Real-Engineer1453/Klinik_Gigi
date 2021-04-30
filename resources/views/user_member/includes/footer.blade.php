@@ -27,7 +27,7 @@
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <h6 class="text-gradient text-primary font-weight-bolder">Soft UI Design System</h6>
+            <h6 class="text-gradient text-warning font-weight-bolder">PKS MUDA DIY</h6>
           </div>
           <div>
             <h6 class="mt-3 mb-2 opacity-8">Social</h6>
@@ -62,21 +62,21 @@
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
           <div>
-            <h6 class="text-gradient text-primary text-sm">Company</h6>
+            <h6 class="text-gradient text-warning text-sm">Komunitas</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
-                  About Us
+                  Relawan Digital
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                  Freebies
+                  Relawan Literasi
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                  Premium Tools
+                  PKS Arts
                 </a>
               </li>
               <li class="nav-item">
@@ -89,21 +89,21 @@
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
           <div>
-            <h6 class="text-gradient text-primary text-sm">Resources</h6>
+            <h6 class="text-gradient text-warning text-sm">Program</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link" href="https://iradesign.io/" target="_blank">
-                  Illustrations
+                  Bangun Desa
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
-                  Bits & Snippets
+                  Ngopi
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
-                  Affiliate Program
+                  Pemuda Religi
                 </a>
               </li>
             </ul>
@@ -111,26 +111,26 @@
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4">
           <div>
-            <h6 class="text-gradient text-primary text-sm">Help & Support</h6>
+            <h6 class="text-gradient text-warning text-sm">SMBK</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
-                  Contact Us
+                  Sekolah Content Creator
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
-                  Knowledge Center
+                  Public Speak Class
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-soft-ui-footer" target="_blank">
-                  Custom Development
+                  Literasi Class
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
-                  Sponsorships
+                  Minat Bakat
                 </a>
               </li>
             </ul>
@@ -138,21 +138,21 @@
         </div>
         <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
           <div>
-            <h6 class="text-gradient text-primary text-sm">Legal</h6>
+            <h6 class="text-gradient text-warning text-sm">UMKM PKS</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/terms" target="_blank">
-                  Terms & Conditions
+                  GenPro
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/privacy" target="_blank">
-                  Privacy Policy
+                  Kerjasama
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
-                  Licenses (EULA)
+                  Katalog
                 </a>
               </li>
             </ul>
@@ -161,9 +161,12 @@
         <div class="col-12">
           <div class="text-center">
             <p class="my-4 text-sm">
-              All rights reserved. Copyright © <script>
+                © <script>
                 document.write(new Date().getFullYear())
-              </script> Soft UI Design System by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+              </script> 
+                made with <i class="fa fa-heart"></i> by
+                <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
+                for a better Partai 4.0.
             </p>
           </div>
         </div>
