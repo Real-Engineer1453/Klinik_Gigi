@@ -1,5 +1,5 @@
 <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-  <div class="pt-5">
+  {{-- <div class="pt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 ms-auto">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
   <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
   <footer class="footer pt-5 mt-5">
     <hr class="horizontal dark mb-5">
@@ -163,7 +163,7 @@
             <p class="my-4 text-sm">
                 © <script>
                 document.write(new Date().getFullYear())
-              </script> 
+              </script>
                 made with <i class="fa fa-heart"></i> by
                 <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
                 for a better Partai 4.0.
