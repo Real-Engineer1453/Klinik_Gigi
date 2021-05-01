@@ -355,11 +355,11 @@ Coded by www.creative-tim.com
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 ms-lg-5">
-                        <h4 class="text-white mb-0">Built by developers</h4>
-                        <h1 class="text-white">Complex Documentation</h1>
-                        <p class="lead text-white opacity-8">From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components.</p>
+                        <h4 class="text-white mb-0">Built by Developer</h4>
+                        <h1 class="text-white">Complex Architecture</h1>
+                        <p class="lead text-white opacity-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ullam ex repudiandae earum ea explicabo expedita doloremque facere tempore numquam?.</p>
                         <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-design-system" class="text-white icon-move-right">
-                        Read docs
+                        More Info
                         <i class="fas fa-arrow-right text-sm ms-1"></i>
                         </a>
                     </div>
@@ -392,7 +392,7 @@ Coded by www.creative-tim.com
             </div>
             <div class="description ps-5">
                 <h5 class="text-white">Getting Started</h5>
-                <p class="text-white">Check the possible ways of working with our product and the necessary files for building your own project.</p>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate amet quia?.</p>
                 <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-design-system" class="text-white icon-move-right">
                 Let's start
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
@@ -419,7 +419,7 @@ Coded by www.creative-tim.com
             </div>
             <div class="description ps-5">
                 <h5>Plugins</h5>
-                <p>Get inspiration and have an overview about the plugins that we used to create the Soft UI Design System.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique obcaecati animi, laborum possimus assumenda rem quod!.</p>
                 <a href="https://www.creative-tim.com/learning-lab/bootstrap/datepicker/soft-ui-design-system" class="text-warning icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
@@ -446,7 +446,7 @@ Coded by www.creative-tim.com
             </div>
             <div class="description ps-5">
                 <h5>Utility Classes</h5>
-                <p>Soft UI Design System is giving you a lot of pre-made elements. For those who want flexibility, we included many utility classes.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit hic quisquam quas explicabo..</p>
                 <a href="https://www.creative-tim.com/learning-lab/bootstrap/utilities/soft-ui-design-system" class="text-warning icon-move-right">
                 Read more
                 <i class="fas fa-arrow-right text-sm ms-1"></i>
@@ -458,12 +458,12 @@ Coded by www.creative-tim.com
     </div>
     <!-- -------- END Content Presentation Docs ------- -->
 
+    {{-- Testimoni --}}
     <section class="py-7">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
-                    <h2 class="mb-0">Testimoni</h2>
-                    <h2 class="text-gradient text-warning mb-3">1,435,000 TestimonialS</h2>
+                    <h2 class="text-gradient text-warning mb-3">Testimonial</h2>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab id placeat neque mollitia!. </p>
                 </div>
             </div>
@@ -479,7 +479,7 @@ Coded by www.creative-tim.com
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-4">"This is an excellent product, the documentation is excellent and helped me get things done more efficiently."</p>
+                            <p class="mt-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at beatae tempora!."</p>
                             <div class="rating mt-3">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -501,7 +501,7 @@ Coded by www.creative-tim.com
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-4 text-white">"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"</p>
+                            <p class="mt-4 text-white">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ratione sequi saepe deleniti expedita illo quasi sit illum optio architecto rem, numquam vero corrupti cumque provident necessitatibus beatae omnis ipsam?."</p>
                             <div class="rating mt-3">
                                 <i class="fas fa-star text-white"></i>
                                 <i class="fas fa-star text-white"></i>
@@ -523,7 +523,7 @@ Coded by www.creative-tim.com
                                     </div>
                                 </div>
                             </div>
-                            <p class="mt-4">"Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."</p>
+                            <p class="mt-4">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et reprehenderit qui voluptate autem mollitia iure aperiam, quidem laboriosam modi unde quam cupiditate magni, similique obcaecati tempore possimus aspernatur? Tenetur, magni."</p>
                             <div class="rating mt-3">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -546,10 +546,10 @@ Coded by www.creative-tim.com
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">
-                        <h3 class="text-white mb-0">Do you love this awesome</h3>
-                        <h3 class="text-warning text-gradient mb-4">Design System for Bootstrap 5?</h3>
-                        <p class="text-white mb-5">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in HTML. Start a new project or give an old Bootstrap project a new look!</p>
-                        <a href="https://www.creative-tim.com/product/soft-ui-design-system" class="btn btn-warning btn-lg mb-3 mb-sm-0">Download HTML</a>
+                        <h3 class="text-white mb-0">Kalimat Call To Action</h3>
+                        <h3 class="text-warning text-gradient mb-4">Kalimat Persuasif</h3>
+                        <p class="text-white mb-5">Kalimat Peyakin</p>
+                        <a href="#" class="btn btn-warning btn-lg mb-3 mb-sm-0">Daftar Member</a>
                     </div>
                 </div>
             </div>
@@ -573,9 +573,9 @@ Coded by www.creative-tim.com
                         <i class="ni ni-building"></i>
                         </div>
                         <h4 class="text-gradient text-warning mb-0">Special Thanks</h4>
-                        <h4 class="mb-4"><a href="https://twitter.com/dnyivn" target="blank" rel="nofollow">3D Images by Danny Ivan</a></h4>
-                        <p>We are more than happy to use the great images made by Danny inside Soft UI Design System. They come with a high level of quality and bright colors, fitting perfect with our product's colors.<br><br> Danny is a important designer that is active into the 3D Image space. His war was awarded many times in different categories in Behance, Digital Art or Motion Graphics.</p>
-                        <a href="https://www.behance.net/dannyivan" target="blank" rel="nofollow" class="text-dark icon-move-right">Check Danny's work
+                        <h4 class="mb-4"><a href="https://twitter.com/dnyivn" target="blank" rel="nofollow">PKS Muda</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aut itaque fuga, tempora minima labore molestias vero sed natus illo nihil nobis ab laboriosam fugit cum, iusto, ipsam pariatur velit..<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto minus voluptates et non, eos laboriosam magni nam odit cupiditate est dignissimos? Minima, iste culpa?.</p>
+                        <a href="https://www.behance.net/dannyivan" target="blank" rel="nofollow" class="text-dark icon-move-right">Check Program
                         <i class="fas fa-arrow-right text-sm ms-1"></i>
                         </a>
                     </div>

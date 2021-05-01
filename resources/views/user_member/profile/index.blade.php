@@ -10,12 +10,12 @@ User Profile
         <div class="col-md-4">
         <div class="card card-user">
             <div class="image">
-            <img src="../assets/img/damir-bosnjak.jpg" alt="...">
+            <img src="{{ url ('dashboard_member/assets/img/damir-bosnjak.jpg')}}" alt="dashboard_member.">
             </div>
             <div class="card-body">
             <div class="author">
                 <a href="#">
-                <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+                <img class="avatar border-gray" src="{{ url ('dashboard_member/assets/img/mike.jpg')}}" alt="dashboard_member.">
                 <h5 class="title">Chet Faker</h5>
                 </a>
                 <p class="description">
@@ -55,7 +55,7 @@ User Profile
                 <div class="row">
                     <div class="col-md-2 col-2">
                     <div class="avatar">
-                        <img src="../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                        <img src="{{ url ('dashboard_member/assets/img/faces/ayo-ogunseinde-2.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                     </div>
                     </div>
                     <div class="col-md-7 col-7">
@@ -72,7 +72,7 @@ User Profile
                 <div class="row">
                     <div class="col-md-2 col-2">
                     <div class="avatar">
-                        <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                        <img src="{{ url ('dashboard_member/assets/img/faces/joe-gardner-2.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                     </div>
                     </div>
                     <div class="col-md-7 col-7">
@@ -89,7 +89,7 @@ User Profile
                 <div class="row">
                     <div class="col-md-2 col-2">
                     <div class="avatar">
-                        <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                        <img src="{{ url ('dashboard_member/assets/img/faces/clem-onojeghuo-2.jpg')}}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                     </div>
                     </div>
                     <div class="col-ms-7 col-7">
