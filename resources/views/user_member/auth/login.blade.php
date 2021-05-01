@@ -5,15 +5,6 @@ Sign In
 @endsection
 
 @section('content')
-@if(Session::has('notification_register'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <?= session('notification_register') ?>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-@endif
-
 <section>
     <div class="page-header section-height-100">
         <div class="container">
@@ -21,6 +12,17 @@ Sign In
                 <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
                     <div class="card card-plain">
                         <div class="card-header pb-0 text-left">
+
+                            @if(Session::has('notification_register'))
+                            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                <span class="alert-icon text-white"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-text text-white"><?= session('notification_register') ?></span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                    {{-- <span aria-hidden="true">&times;</span> --}}
+                                </button>
+                            </div>
+                            @endif
+
                             <h4 class="font-weight-bolder">Sign In</h4>
                             <p class="mb-0">Enter your email and password to sign in</p>
                         </div>
