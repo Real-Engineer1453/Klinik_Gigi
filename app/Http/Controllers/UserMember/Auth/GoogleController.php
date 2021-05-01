@@ -42,7 +42,7 @@ class GoogleController extends Controller
                     'email' => $user->email,
                     'phone_number' => $user->id,
                     'google_id'=> $user->id,
-                    'password' => encrypt('user_member')
+                    'password' => bcrypt('user_member')
                 ]);
 
                 Auth::guard('user_member')->login($newUser);
