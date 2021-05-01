@@ -20,8 +20,8 @@ Route::get('login_member', 'UserMember\Auth\LoginController@index')->name('login
 Route::post('login_member', 'UserMember\Auth\LoginController@login')->name('auth.login_member');
 Route::get('logout_member', 'UserMember\Auth\LoginController@logout')->name('auth.logout_member');
 
-Route::get('signin_member', 'UserMember\Auth\SigninController@index')->name('signin_member');
-Route::post('signin_member', 'UserMember\Auth\SigninController@signin')->name('auth.signin_member');
+Route::get('signup_member', 'UserMember\Auth\SignupController@index')->name('signup_member');
+Route::post('signup_member', 'UserMember\Auth\SignupController@signup')->name('auth.signup_member');
 
 Route::get('auth/google', 'UserMember\Auth\GoogleController@redirectToGoogle')->name('auth.redirectToGoogle');
 Route::get('auth/google/callback', 'UserMember\Auth\GoogleController@handleGoogleCallback')->name('auth.handleGoogleCallback');

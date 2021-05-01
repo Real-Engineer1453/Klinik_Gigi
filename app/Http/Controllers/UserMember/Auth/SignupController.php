@@ -8,7 +8,7 @@ use App\Repositories\UserMemberRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class SigninController extends Controller
+class SignupController extends Controller
 {
     private $userMemberRepository;
 
@@ -23,10 +23,10 @@ class SigninController extends Controller
         {
             return redirect()->route('user_member.dashboard');
         }
-        return view('user_member.auth.signin');
+        return view('user_member.auth.signup');
     }
 
-    public function signin(SigninUserMemberRequest $request)
+    public function signup(SigninUserMemberRequest $request)
     {
         $this->userMemberRepository->create($request->validated());
 

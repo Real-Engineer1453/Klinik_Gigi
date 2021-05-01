@@ -38,7 +38,7 @@ Registrasi
               </a>
             </div>
             <div class="col-3 me-auto px-1">
-              <a class="btn btn-outline-light w-100" href="javascript:;">
+              <a class="btn btn-outline-light w-100" href="{{ url('auth/google') }}">
                 <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="google-icon" transform="translate(3.000000, 2.000000)" fill-rule="nonzero">
@@ -59,7 +59,7 @@ Registrasi
           </div>
           <div class="card-body">
               {{-- Form Regist --}}
-            <form role="form text-left" class="form" method="POST" action="{{route('auth.signin_member')}}">
+            <form role="form text-left" class="form" method="POST" action="{{route('auth.signup_member')}}">
               @csrf
               <div class="mb-3">
                 <input class="form-control" type="text" name="name" placeholder="Nama"
