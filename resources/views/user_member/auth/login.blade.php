@@ -66,8 +66,8 @@ Sign In
                     <div class="position-relative">
                         <img class="max-width-500 w-100 position-relative z-index-2" src="{{ url ('front_office/assets/img/illustrations/chat.png')}}">
                     </div>
-                    <h4 class="mt-5 text-white font-weight-bolder">"Attention is the new currency"</h4>
-                    <p class="text-white">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+                    <h4 class="mt-5 text-white font-weight-bolder">Ucapan Selamat</h4>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur accusamus natus..</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ Sign In
             <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bolder d-flex align-items-center me-2 active" aria-current="page" href=".#">
+                        <a class="nav-link font-weight-bolder d-flex align-items-center me-2 active" aria-current="page" href="{{ route('home')}}">
                         WELCOME TO PKS MUDA DIGITAL BASECAMP
                         </a>
                     </li>

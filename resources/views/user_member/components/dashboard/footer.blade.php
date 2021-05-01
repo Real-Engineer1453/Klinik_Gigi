@@ -3,16 +3,18 @@
         <div class="row">
         <nav class="footer-nav">
             <ul>
-            <li><a href="https://www.creative-tim.com" target="_blank">Creative Tim</a></li>
-            <li><a href="https://www.creative-tim.com/blog" target="_blank">Blog</a></li>
-            <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
+            <li><a href="#" target="_blank">About Us</a></li>
+            <li><a href="#" target="_blank">Blog</a></li>
             </ul>
         </nav>
         <div class="credits ml-auto">
             <span class="copyright">
-            © <script>
+            ©<script>
                 document.write(new Date().getFullYear())
-            </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+            </script>
+            made with <i class="fa fa-heart"></i> by
+            <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
+            for a better Partai 4.0.
             </span>
         </div>
         </div>

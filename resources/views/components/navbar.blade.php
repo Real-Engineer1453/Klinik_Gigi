@@ -557,8 +557,8 @@
                         <a href="{{route('auth.logout_member')}}" class="btn btn-sm  bg-gradient-warning  btn-round mb-0 me-1 mt-2 mt-md-0">Log Out</a>
                     </li>
                     @else
-                    <li class="nav-item ms-lg-auto">
-
+                    <li class="nav-item my-auto ms-lg-auto">
+                        <a href="{{route('auth.signup_member')}}" class="btn btn-sm  bg-gradient-info  btn-round mb-0 me-1 mt-2 mt-md-0">Sign Up</a>
                     </li>
 
                     <li class="nav-item my-auto ms-3 ms-lg-0">

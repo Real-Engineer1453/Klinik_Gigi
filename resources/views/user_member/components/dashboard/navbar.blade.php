@@ -49,8 +49,8 @@
             </div>
             </li>
             <li class="nav-item">
-            <a class="nav-link btn-rotate" href="javascript:;">
-                <i class="nc-icon nc-settings-gear-65"></i>
+            <a class="nav-link btn btn-sm btn-rotate" href="{{route('auth.logout_member')}}">
+                Logout
                 <p>
                 <span class="d-lg-none d-md-block">Account</span>
                 </p>

@@ -21,18 +21,17 @@
                     <i class="fa fa-user me-sm-1 cursor-pointer"></i>
                     <span class="d-sm-inline d-none">{{auth()->guard('user_officer')->user()->username}}</span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <ul class="dropdown-menu dropdown-menu-end py-1 text-center" aria-labelledby="dropdownMenuButton">
                     <li class="mb-2">
-                    <a class="dropdown-item border-radius-md" href="javascript:;">
-                        <div class="d-flex py-1">
-                            <div class="d-flex flex-column justify-content-center">
+                        <div class="">
+                            <div class="justify-content-center">
                                 <p class="text-warning mb-0">
-                                <i class="fa fa-clock me-1"></i>
-                                Logout
+                                    <a href="{{ route('auth.logout_officer') }}" class="">
+                                        <i class="fa fa-clock me-1"></i>
+                                        Logout</a>
                                 </p>
                             </div>
                         </div>
-                    </a>
                     </li>
                 </ul>
             </li>
