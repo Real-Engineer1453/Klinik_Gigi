@@ -43,8 +43,6 @@
 
 </main>
 
-    @include('user_officer.includes.plugin')
-
     @include('user_officer.includes.script')
 
     {{-- Add-On Script --}}
