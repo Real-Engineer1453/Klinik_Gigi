@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '1090319318266-oottvrnk5q7issbm0aeri43v0q7d8avf.apps.googleusercontent.com',
+        'client_secret' => '8wWyMDl5bA_nYXjaAgZbVxfy',
+        'redirect' => 'http://funapp-re1453.herokuapp.com/auth/google/callback',
+    ],
 ];

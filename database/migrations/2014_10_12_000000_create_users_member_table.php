@@ -18,13 +18,19 @@ class CreateUsersMemberTable extends Migration
             $table->string('name');
             $table->string('username')->unique();
             $table->string('email')->unique();
+
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('phone_number')->unique();
+
             $table->rememberToken();
+            $table->text('profile_photo_url')->nullable();
+            $table->text('profile_photo_path')->nullable();
+            $table->dateTime('baned_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
+
         });
     }
 

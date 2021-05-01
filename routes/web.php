@@ -23,6 +23,9 @@ Route::get('logout_member', 'UserMember\Auth\LoginController@logout')->name('aut
 Route::get('signin_member', 'UserMember\Auth\SigninController@index')->name('signin_member');
 Route::post('signin_member', 'UserMember\Auth\SigninController@signin')->name('auth.signin_member');
 
+Route::get('auth/google', 'UserMember\Auth\GoogleController@redirectToGoogle')->name('auth.redirectToGoogle');
+Route::get('auth/google/callback', 'UserMember\Auth\GoogleController@handleGoogleCallback')->name('auth.handleGoogleCallback');
+
 Route::middleware(['auth.user_member'])->name('user_member.')->prefix('user_member')->group(function () {
     // Dashboard
     Route::get('dashboard', 'UserMember\DashboardController@index')->name('dashboard');
