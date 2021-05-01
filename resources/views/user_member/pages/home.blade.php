@@ -1,10 +1,11 @@
-@extends('user_member.layouts.app')
+
+{{-- @extends('user_member.layouts.app') --}}
 
 @section('title')
 Real 3ngineer
 @endsection
 
-@section('content')
+{{-- @section('content') --}}
 {{-- Content --}}
 <main class="">
     <table>
@@ -33,4 +34,4 @@ Real 3ngineer
     </tr>
 </table>
 </main>
-@endsection
+{{-- @endsection --}}

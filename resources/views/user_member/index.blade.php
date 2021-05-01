@@ -20,7 +20,7 @@ Coded by www.creative-tim.com
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
-    @include('user_member.includes.dashboard.style')
+    @include('user_member.components.dashboard.style')
 
     <title>
         @yield('title')
@@ -30,20 +30,20 @@ Coded by www.creative-tim.com
 <body class="">
   <div class="wrapper ">
 
-    @include('user_member.includes.dashboard.sidebar')
+    @include('user_member.components.dashboard.sidebar')
 
     <div class="main-panel">
 
-        @include('user_member.includes.dashboard.navbar')
+        @include('user_member.components.dashboard.navbar')
 
         @yield('content')
 
-        @include('user_member.includes.dashboard.footer')
+        @include('user_member.components.dashboard.footer')
 
     </div>
   </div>
 
-    @include('user_member.includes.dashboard.script')
+    @include('user_member.components.dashboard.script')
 
 </body>
 

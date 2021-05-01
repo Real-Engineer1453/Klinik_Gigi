@@ -18,7 +18,7 @@ Coded by www.creative-tim.com
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  @include('includes.style')
+  @include('components.style')
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <title>
@@ -28,7 +28,7 @@ Coded by www.creative-tim.com
 
 <body class="index-page">
 
-    @include('includes.navbar')
+    @include('components.navbar')
 
     {{-- Header --}}
     <header class="header-2">
@@ -585,9 +585,9 @@ Coded by www.creative-tim.com
     </section>
     <!-- END Section Content -->
 
-    @include('includes.footer')
+    @include('components.footer')
 
-    @include('includes.script')
+    @include('components.script')
 
 
     <script type="text/javascript">

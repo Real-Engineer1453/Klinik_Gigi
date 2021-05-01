@@ -18,7 +18,7 @@ Coded by www.creative-tim.com
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    @include('user_member.includes.style')
+    @include('user_member.components.style')
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <title>
@@ -32,7 +32,7 @@ Coded by www.creative-tim.com
 
     @yield('content')
 
-    @include('user_member.includes.script')
+    @include('user_member.components.script')
 
 </body>
 

@@ -31,7 +31,7 @@ class LoginController extends Controller
 
         if (Auth::guard('user_member')->attempt($request->validated())) {
             try {
-                return redirect()->route('user_member.dashboard');
+                return redirect()->route('home');
             } catch (Throwable $e) {
                 report($e);
 

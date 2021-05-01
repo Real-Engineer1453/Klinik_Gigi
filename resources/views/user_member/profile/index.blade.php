@@ -1,4 +1,4 @@
-@extends('user_member.layout.dashboard')
+@extends('user_member.index')
 
 @section('title')
 User Profile
