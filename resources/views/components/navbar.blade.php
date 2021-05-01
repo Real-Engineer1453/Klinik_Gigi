@@ -548,7 +548,7 @@
                     </li>
                     @if(auth()->guard('user_member')->check())
                     <li class="nav-item ms-lg-auto">
-                        <a class="nav-link nav-link-icon me-2" href="#" target="_blank">
+                        <a class="nav-link nav-link-icon me-2" href="{{ route('user_member.dashboard')}}" target="_blank">
                         <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">{{auth()->guard('user_member')->user()->username }}</p>
                         </a>
                     </li>
