@@ -1,5 +1,15 @@
-SHOW Rekam Medis<br>
-<a href="{{ route('user_officer.user_member.index') }}">Back</a>
+@extends('user_officer.layouts.app')
+
+@section('title')
+Show Rekam Medis
+@endsection
+
+@section('content')
+<div class="container-fluid py-4">
+    <div class="row">
+    <div class="col-12">
+        <div class="card mb-4">
+          <a href="{{ route('user_officer.user_member.index') }}">Back</a>
 <table border="1">
   <tr>
     <td>NAMA</td>
@@ -64,3 +74,9 @@ SHOW Rekam Medis<br>
 </table>
 
 {{$data->appends(Request::all())->links()}}
+
+        </div>
+    </div>
+    </div>
+</div>
+@endsection
