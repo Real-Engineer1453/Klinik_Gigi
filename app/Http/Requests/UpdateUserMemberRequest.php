@@ -25,7 +25,7 @@ class UpdateUserMemberRequest extends FormRequest
     {
         return [
             "nama" => "required|min:2|max:100",
-            "nomor_cm" => "required|max:255|unique:user_member,nomor_cm,'.$this->id",
+            "nomor_cm" => 'required|unique:users_member,nomor_cm,'.$this->id,
             "tanggal_lahir" => "required|date",
             "alamat" => "required|max:255",
             "nomor_hp" => "required|digits_between:10,16"

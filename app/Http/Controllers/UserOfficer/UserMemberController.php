@@ -64,7 +64,7 @@ class UserMemberController extends Controller
         $data = $this->userMemberRepository->findById($id);
 
         $request->validated();
-//        $this->userMemberRepository->update_request($id, $request);
+        $this->userMemberRepository->update_request($id, $request);
 
         return redirect()
             ->route('user_officer.user_member.index')
