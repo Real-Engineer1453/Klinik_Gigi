@@ -31,8 +31,6 @@
 
 <body class="g-sidenav-show  bg-gray-100">
 
-    @include('user_officer.includes.aside')
-
 <main class="main-content mt-1 border-radius-lg">
 
     @include('user_officer.includes.navbar')
