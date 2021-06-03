@@ -16,10 +16,11 @@ class CreateUsersMemberTable extends Migration
         Schema::create('users_member', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->integer('nomor_cm')->nullable();
+            $table->integer('nomor_cm')->unique();
             $table->date('tanggal_lahir')->nullable();
             $table->string('alamat')->nullable();
             $table->string('nomor_hp')->nullable();
+            $table->string('user_officer', 100)->nullable();
 
             $table->rememberToken();
             $table->softDeletes();

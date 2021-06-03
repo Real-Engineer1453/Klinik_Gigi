@@ -18,6 +18,23 @@ class UserMemberRepository
         return UserMemberModel::create($data);
     }
 
+    public function create_request($request)
+    {
+        $user_member = new UserMemberModel;
+
+        // default
+        $user_member->user_officer = auth()->guard('user_officer')->user()->name;
+
+        // input request
+        $user_member->nama = $request->nama;
+        $user_member->nomor_cm = $request->nomor_cm;
+        $user_member->tanggal_lahir = $request->tanggal_lahir;
+        $user_member->alamat = $request->alamat;
+        $user_member->nomor_hp = $request->nomor_hp;
+
+        return $user_member->save();
+    }
+
     public function auth()
     {
         $user = Auth::guard('user_member')->user();

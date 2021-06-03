@@ -1,4 +1,4 @@
-
+<h1>Tambah Member</h1>
 {{ Form::open(['route' => ['user_officer.user_member.store'],'method'=>'POST','enctype'=>"multipart/form-data",'files'=>true]) }}
 <div class="row">
     <label for="nama" class="col-sm-2 col-form-label">Nama*</label>
@@ -82,5 +82,6 @@
 </div>
 <div class="text-center">
     <input class="btn btn-rose btn-sm" type="submit" value="Simpan" />
+    <a href="{{ route('user_officer.user_member.index') }}">Back</a>
 </div>
 {{ Form::close() }}

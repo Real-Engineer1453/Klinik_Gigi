@@ -53,7 +53,7 @@ Data Member
                             <p class="text-xs font-weight-bold mb-0">{{ $um->nomor_hp }}</p>
                         </td>
                         <td class="align-middle">
-                            <a href="#" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                            <a href="{{ route('user_officer.user_member.edit', $um->id ) }}" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                                 Edit
                             </a>
                             <a href="#" class="text-secondary font-weight-bold text-xs ms-2" data-toggle="tooltip" data-original-title="Edit user">
@@ -69,6 +69,7 @@ Data Member
         </div>
         </div>
     </div>
+        {{$data->appends(Request::all())->links()}}
     </div>
 </div>
 @endsection

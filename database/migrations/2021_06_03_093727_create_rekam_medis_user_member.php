@@ -20,6 +20,7 @@ class CreateRekamMedisUserMember extends Migration
             $table->string('riwayat_alergi')->nullable();
             $table->string('tindakan')->nullable();
             $table->string('terapi_obat')->nullable();
+            $table->string('user_officer', 100)->nullable();
             $table->timestamps();
         });
     }
