@@ -16,29 +16,23 @@ class UserMemberSeeder extends Seeder
         $data = new \App\Repositories\UserMemberRepository();
 
         $data->create([
-            'name' => "zufar",
-            'email' => "zufar@gmail.com",
-            'password' => 'user_member',
-            'address' => $faker->address,
-            'phone_number' => $faker->phoneNumber
+            'nama' => "zufar",
+            'alamat' => $faker->address,
+            'nomor_hp' => $faker->phoneNumber
         ]);
 
         $data->create([
-            'name' => "auzan",
-            'email' => "auzan@gmail.com",
-            'password' => 'user_member',
-            'address' => $faker->address,
-            'phone_number' => $faker->phoneNumber
+            'nama' => "auzan",
+            'alamat' => $faker->address,
+            'nomor_hp' => $faker->phoneNumber
         ]);
 
         for ($i=1;$i<=3;$i++)
         {
             $data->create([
-                'name' => $faker->name,
-                'email' => $faker->email,
-                'password' => 'user_member',
-                'address' => $faker->address,
-                'phone_number' => $faker->phoneNumber
+                'nama' => $faker->name,
+                'alamat' => $faker->address,
+                'nomor_hp' => $faker->phoneNumber
             ]);
         }
     }

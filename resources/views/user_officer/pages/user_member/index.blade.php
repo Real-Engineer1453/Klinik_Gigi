@@ -18,9 +18,10 @@ Data Member
                 <thead>
                 <tr>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Domisili</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Peminatan</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date Regist</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nomor CM</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tgl Lahir</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No.HP</th>
                     <th class="text-secondary opacity-7"></th>
                 </tr>
                 </thead>
@@ -34,20 +35,21 @@ Data Member
                                     <img src="{{ url ('back_office/assets/img/team-2.jpg')}}" class="avatar avatar-sm me-3">
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">{{ $um->name }}</h6>
-                                    <p class="text-xs text-secondary mb-0">{{ $um->username }}, {{ $um->email }}</p>
+                                    <h6 class="mb-0 text-sm">{{ $um->nama }}</h6>
                                 </div>
                             </div>
                         </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">DIY</p>
-                            <p class="text-xs text-secondary mb-0">Sleman</p>
+                        <td class="align-middle text-center text-sm">
+                            <span class="text-secondary text-xs font-weight-bold">{{ $um->nomor_cm }}</span>
                         </td>
                         <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-success">SMBK</span>
+                            <span class="text-secondary text-xs font-weight-bold">{{ $um->tanggal_lahir }}</span>
+                        </td>
+                        <td>
+                            <p class="text-xs font-weight-bold mb-0">{{ $um->alamat }}</p>
                         </td>
                         <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">28/04/21</span>
+                            <p class="text-xs font-weight-bold mb-0">{{ $um->nomor_hp }}</p>
                         </td>
                         <td class="align-middle">
                             <a href="#" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">

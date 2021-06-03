@@ -15,19 +15,13 @@ class CreateUsersMemberTable extends Migration
     {
         Schema::create('users_member', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('username')->unique();
-            $table->string('email')->unique();
-
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('address')->nullable();
-            $table->string('phone_number')->unique();
+            $table->string('nama');
+            $table->integer('nomor_cm')->nullable();
+            $table->date('tanggal_lahir')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('nomor_hp')->nullable();
 
             $table->rememberToken();
-            $table->text('profile_photo_url')->nullable();
-            $table->text('profile_photo_path')->nullable();
-            $table->dateTime('baned_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
 

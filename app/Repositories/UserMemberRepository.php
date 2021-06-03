@@ -10,11 +10,11 @@ class UserMemberRepository
 {
     public function create($data)
     {
-        $default = [
-            'username' => $data['email']
-        ];
-        $data['password'] = bcrypt($data['password']);
-        $data = array_merge($default, $data);
+//        $default = [
+//            'username' => $data['email']
+//        ];
+//        $data['password'] = bcrypt($data['password']);
+//        $data = array_merge($default, $data);
         return UserMemberModel::create($data);
     }
 
