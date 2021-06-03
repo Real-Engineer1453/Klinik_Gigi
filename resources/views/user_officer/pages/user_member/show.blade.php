@@ -53,7 +53,7 @@ SHOW Rekam Medis<br>
         <p class="text-sm font-weight-bold mb-0">{{ $d->user_officer }}</p>
       </td>
       <td class="align-middle">
-        <a href="{{ route('user_officer.user_member.edit', $d->id) }}" class="badge bg-info">
+        <a href="#" class="badge bg-info">
           Edit
         </a>
       </td>
