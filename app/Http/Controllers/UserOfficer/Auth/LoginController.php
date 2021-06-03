@@ -21,7 +21,7 @@ class LoginController extends Controller
     {
         if(Auth::guard('user_officer')->check())
         {
-            return redirect()->route('user_officer.dashboard');
+            return redirect()->route('user_officer.user_member.index');
         }
         return view('user_officer.auth.login');
     }
@@ -31,7 +31,7 @@ class LoginController extends Controller
 
         if (Auth::guard('user_officer')->attempt($request->validated())) {
             try {
-                return redirect()->route('user_officer.dashboard');
+                return redirect()->route('user_officer.user_member.index');
             } catch (Throwable $e) {
                 report($e);
 

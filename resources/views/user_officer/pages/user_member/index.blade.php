@@ -10,18 +10,18 @@ Data Member
     <div class="col-12">
         <div class="card mb-4">
         <div class="card-header pb-0">
-            <h6>Members Table</h6>
+            <h6>Tabel Pasien</h6>
         </div>
         <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0">
             <table class="table align-items-center mb-0">
                 <thead>
                 <tr>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nomor CM</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tgl Lahir</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No.HP</th>
+                    <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Nama</th>
+                    <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">Nomor CM</th>
+                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Tgl Lahir</th>
+                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Alamat</th>
+                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">No.HP</th>
                     <th class="text-secondary opacity-7"></th>
                 </tr>
                 </thead>
@@ -31,32 +31,26 @@ Data Member
                     <tr>
                         <td>
                             <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="{{ url ('back_office/assets/img/team-2.jpg')}}" class="avatar avatar-sm me-3">
-                                </div>
                                 <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">{{ $um->nama }}</h6>
+                                    <a href="#" class="mb-0 fw-bold text-sm">{{ $um->nama }}</a>
                                 </div>
                             </div>
                         </td>
                         <td class="align-middle text-center text-sm">
-                            <span class="text-secondary text-xs font-weight-bold">{{ $um->nomor_cm }}</span>
+                            <span class="text-secondary text-sm font-weight-bold">{{ $um->nomor_cm }}</span>
                         </td>
                         <td class="align-middle text-center text-sm">
-                            <span class="text-secondary text-xs font-weight-bold">{{ $um->tanggal_lahir }}</span>
+                            <span class="text-secondary text-sm font-weight-bold">{{ $um->tanggal_lahir }}</span>
                         </td>
                         <td>
-                            <p class="text-xs font-weight-bold mb-0">{{ $um->alamat }}</p>
+                            <p class="text-sm font-weight-bold mb-0">{{ $um->alamat }}</p>
                         </td>
                         <td class="align-middle text-center">
-                            <p class="text-xs font-weight-bold mb-0">{{ $um->nomor_hp }}</p>
+                            <p class="text-sm font-weight-bold mb-0">{{ $um->nomor_hp }}</p>
                         </td>
                         <td class="align-middle">
-                            <a href="#" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                            <a href="#" class="badge bg-info">
                                 Edit
-                            </a>
-                            <a href="#" class="text-secondary font-weight-bold text-xs ms-2" data-toggle="tooltip" data-original-title="Edit user">
-                                Delete
                             </a>
                         </td>
                     </tr>
@@ -81,20 +75,9 @@ Data Member
                     © <script>
                     document.write(new Date().getFullYear())
                     </script>,
-                    made with <i class="fa fa-heart"></i> by
-                    <a href="#" class="font-weight-bold" target="_blank">PKS Muda Prov. DIY</a>
-                    for a better Partai 4.0.
+                    made by
+                    <a href="#" class="font-weight-bold" target="_blank">Klinik Gigi Rahma Defi</a>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                    <li class="nav-item">
-                        <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://blog.creative-tim.com" class="nav-link text-muted" target="_blank">Blog</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

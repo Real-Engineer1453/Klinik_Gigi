@@ -21,7 +21,7 @@ class DashboardController extends Controller
 
         $data = $this->userOfficerRepository->findById($id);
 
-        return view('user_officer.pages.dashboard',
+        return view('user_officer.pages.user_member',
             compact('data')
         );
     }
