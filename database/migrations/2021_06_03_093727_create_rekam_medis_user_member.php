@@ -21,6 +21,8 @@ class CreateRekamMedisUserMember extends Migration
             $table->string('tindakan')->nullable();
             $table->string('terapi_obat')->nullable();
             $table->string('user_officer', 100)->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

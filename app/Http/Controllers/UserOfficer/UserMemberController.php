@@ -5,6 +5,7 @@ namespace App\Http\Controllers\UserOfficer;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUserMemberRequest;
 use App\Http\Requests\UpdateUserMemberRequest;
+use App\Repositories\RekamMedisUserMemberRepository;
 use App\Repositories\UserMemberRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -47,9 +48,10 @@ class UserMemberController extends Controller
     }
     public function show($id)
     {
-        $data = $this->userMemberRepository->findById($id);
+        $data_user = $this->userMemberRepository->findById($id);
+        $data = (new RekamMedisUserMemberRepository())->get_id_and_paginate($id, 20);
 
-        return view('user_officer.pages.user_member.show', compact('data'));
+        return view('user_officer.pages.user_member.show', compact('data_user', 'data'));
     }
 
     public function edit($id)
@@ -61,8 +63,6 @@ class UserMemberController extends Controller
 
     public function update(UpdateUserMemberRequest $request, $id)
     {
-        $data = $this->userMemberRepository->findById($id);
-
         $request->validated();
         $this->userMemberRepository->update_request($id, $request);
 

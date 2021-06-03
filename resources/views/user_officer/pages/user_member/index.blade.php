@@ -20,7 +20,8 @@ Data Member
             <table class="table align-items-center mb-0">
                 <thead>
                 <tr>
-                    <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Nama</th>
+                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">#</th>
+                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Nama</th>
                     <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">Nomor CM</th>
                     <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Tgl Lahir</th>
                     <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Alamat</th>
@@ -30,12 +31,16 @@ Data Member
                 </thead>
                 <tbody>
 
-                @foreach($data as $um)
+                @foreach($data as $key => $um)
                     <tr>
+
+                        <td class="align-middle text-center text-sm">
+                          <span class="text-secondary text-sm font-weight-bold">{{ ($data->currentpage()-1) * $data->perpage() + $key + 1 }}</span>
+                        </td>
                         <td>
                             <div class="d-flex px-2 py-1">
                                 <div class="d-flex flex-column justify-content-center">
-                                    <a href="#" class="mb-0 fw-bold text-sm">{{ $um->nama }}</a>
+                                    <a href="{{ route('user_officer.user_member.show', $um->id) }}" class="mb-0 fw-bold text-sm">{{ $um->nama }}</a>
                                 </div>
                             </div>
                         </td>
