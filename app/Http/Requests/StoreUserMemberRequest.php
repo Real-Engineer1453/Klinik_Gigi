@@ -25,7 +25,7 @@ class StoreUserMemberRequest extends FormRequest
     {
         return [
             "nama" => "required|min:2|max:100",
-            "nomor_cm" => "required|unique:user_member",
+            "nomor_cm" => "required|unique:users_member",
             "tanggal_lahir" => "required|date",
             "alamat" => "required|max:255",
             "nomor_hp" => "required|digits_between:10,16"
