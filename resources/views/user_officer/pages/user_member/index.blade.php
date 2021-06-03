@@ -11,8 +11,8 @@ Data Member
         <div class="card mb-4">
         <div class="card-header pb-0">
             <div class="d-flex justify-content-between align-items-center">
-                <h6>Tabel Pasien</h6>
-                <a href="{{ route('user_officer.user_member.create') }}" class="badge bg-success">Tambah Member</a>
+                <h6 class="text-uppercase fw-bolder">Tabel Pasien</h6>
+                <a href="{{ route('user_officer.user_member.create') }}" class="btn btn-success">Tambah Pasien</a>
             </div>
         </div>
         <div class="card-body px-0 pt-0 pb-2">
