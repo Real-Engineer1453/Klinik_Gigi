@@ -52,7 +52,7 @@ Data Member
                             <p class="text-sm font-weight-bold mb-0">{{ $um->nomor_hp }}</p>
                         </td>
                         <td class="align-middle">
-                            <a href="#" class="badge bg-info">
+                            <a href="{{ route('user_officer.user_member.edit', $um->id) }}" class="badge bg-info">
                                 Edit
                             </a>
                         </td>
@@ -65,6 +65,7 @@ Data Member
         </div>
         </div>
     </div>
+      {{$data->appends(Request::all())->links()}}
     </div>
 </div>
 @endsection
