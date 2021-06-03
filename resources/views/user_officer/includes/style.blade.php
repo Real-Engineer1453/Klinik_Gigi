@@ -7,5 +7,7 @@
 <link href="{{ url('back_office/assets/css/nucleo-svg.css')}}" rel="stylesheet" />
 <!-- Font Awesome Icons -->
 <link href="{{ url ('back_office/assets/css/nucleo-svg.css')}}" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <!-- CSS Files -->
 <link id="pagestyle" href="{{ url ('back_office/assets/css/soft-ui-dashboard.css?v=1.0.1')}}" rel="stylesheet" />

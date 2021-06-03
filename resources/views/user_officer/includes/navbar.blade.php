@@ -5,10 +5,18 @@
         <div class="pe-md-3 d-flex align-items-center">
             <div class="input-group">
             <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-            <input type="text" class="form-control" placeholder="Type here...">
+            <input type="text" class="form-control" placeholder="Cari...">
             </div>
         </div>
-        <div class="mx-auto"></div>
+        <div class="mx-auto">
+            <a class="nav-link
+                @if (\Request::is('user_officer/user_member*'))
+                active
+                @endif"
+                href="{{ route('user_officer.user_member.index') }}">
+                <span class="nav-link-text ms-1 fw-bolder text-uppercase">Data Pasien</span>
+            </a>
+        </div>
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item dropdown px-3 pe-2 d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">

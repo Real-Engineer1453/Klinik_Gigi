@@ -5,5 +5,8 @@
 <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="{{ url ('back_office/assets/js/soft-ui-dashboard.min.js?v=1.0.1')}}"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
 <script src="{{ url ('back_office/assets/js/plugins/chartjs.min.js')}}"></script>
   <script src="{{ url ('back_office/assets/js/plugins/Chart.extension.js')}}"></script>
