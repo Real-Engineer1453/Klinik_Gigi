@@ -83,12 +83,14 @@ Data Pasien
 <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
 <div class="container-fluid py-1 px-3">
     <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-        <div class="pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-            <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-            <input type="text" class="form-control" placeholder="Cari Nama Pasien...">
+        {{ Form::open(['route' => ['user_officer.user_member.index'],'method'=>'GET','enctype'=>"multipart/form-data",'files'=>true]) }}
+            <div class="pe-md-3 d-flex align-items-center">
+                <div class="input-group">
+                <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+                  <input type="text" name="keyword" value="{{Request::get('keyword')}}" class="form-control" placeholder="Cari Nama Pasien...">
+                </div>
             </div>
-        </div>
+        {{ Form::close() }}
         <div class="mx-auto">
             <h6 class="text-uppercase fw-bolder">
                 Klinik Dokter Gigi Rahma Defi

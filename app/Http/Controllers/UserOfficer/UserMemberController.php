@@ -5,6 +5,7 @@ namespace App\Http\Controllers\UserOfficer;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUserMemberRequest;
 use App\Http\Requests\UpdateUserMemberRequest;
+use App\ModelApp\UserMemberModel;
 use App\Repositories\RekamMedisUserMemberRepository;
 use App\Repositories\UserMemberRepository;
 use Illuminate\Http\Request;
@@ -19,9 +20,19 @@ class UserMemberController extends Controller
         $this->userMemberRepository = $userMemberRepository;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $data = $this->userMemberRepository->get_paginate(20);
+        if($request)
+        {
+          $keyword = $request->get('keyword');
+
+          $data = UserMemberModel::orderBy('nama', "asc")
+              ->where('nama', 'LIKE', "%$keyword%")
+              ->paginate(20);
+        }
+        else {
+          $data = $this->userMemberRepository->get_paginate(20);
+        }
 
         return view('user_officer.pages.user_member.index',
             compact('data')
