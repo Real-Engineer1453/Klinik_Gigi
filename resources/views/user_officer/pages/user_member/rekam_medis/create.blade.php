@@ -1,23 +1,29 @@
 @extends('user_officer.layouts.app')
 
 @section('title')
-  Data Member
+  Tambah Rekam Medis
 @endsection
 
 @section('content')
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent">
+      <li class="breadcrumb-item"><a href="{{ route('user_officer.user_member.index') }}">Data Pasien</a></li>
+      <li class="breadcrumb-item">Rekam Medis</li>
+      <li class="breadcrumb-item active" aria-current="page">Tambah Rekam Medis</li>
+    </ol>
+  </nav>
     <div class="row">
       <div class="col-12">
         <div class="card mb-4">
-          <h6>{{ $data_member->nama }}</h6>
-          <h6>{{ $data_member->nomor_cm }}</h6>
-          <h6>{{ $data_member->tanggal_lahir }}</h6>
-          <h6>{{ $data_member->alamat }}</h6>
-          <h6>{{ $data_member->nomor_hp }}</h6>
-        </div>
-
-        <div class="card mb-4">
           <div class="card-header pb-0">
             <h5 class="text-uppercase fw-bolder">Tambah Rekam Medis Pasien</h5>
+            <div class="d-flex justify-content-between">
+              <h6>{{ $data_member->nama }}</h6>
+              <h6>{{ $data_member->nomor_cm }}</h6>
+              <h6>{{ $data_member->tanggal_lahir }}</h6>
+              <h6>{{ $data_member->alamat }}</h6>
+              <h6>{{ $data_member->nomor_hp }}</h6>
+            </div>
           </div>
           <div class="card-body px-0 pt-0 pb-2 mt-4">
             {{ Form::open(['route' => ['user_officer.rekam_medis.store', $data_member->id],'method'=>'POST','enctype'=>"multipart/form-data",'files'=>true]) }}

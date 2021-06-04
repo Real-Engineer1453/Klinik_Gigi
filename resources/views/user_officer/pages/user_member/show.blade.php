@@ -68,7 +68,6 @@ Show Rekam Medis
                           </div>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn bg-gradient-primary">Save changes</button>
                           <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Close</button>
                         </div>
                       </div>
@@ -82,10 +81,10 @@ Show Rekam Medis
                     <td class="align-middle text-sm" style="word-wrap: break-word">
 
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-sm bg-gradient-primary" data-bs-toggle="modal"
-                              data-bs-target="#modal{{ $d->id }}">
+                      <a type="button" class="badge bg-warning" data-bs-toggle="modal"
+                        data-bs-target="#modal{{ $d->id }}">
                         Detail
-                      </button>
+                      </a>
                       &nbsp;
                       <span class="text-secondary text-sm font-weight-bold">{{ Str::limit($d->anamnesa, 20) }}</span>
 
