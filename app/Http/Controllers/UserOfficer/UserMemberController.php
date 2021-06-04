@@ -27,7 +27,8 @@ class UserMemberController extends Controller
           $keyword = $request->get('keyword');
 
           $data = UserMemberModel::orderBy('nama', "asc")
-              ->where('nama', 'LIKE', "%$keyword%")
+              ->orWhere('nama', 'LIKE', "%$keyword%")
+              ->orWhere('tanggal_lahir', 'LIKE', "%$keyword%")
               ->paginate(20);
         }
         else {
