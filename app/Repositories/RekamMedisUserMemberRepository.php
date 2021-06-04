@@ -26,7 +26,7 @@ class RekamMedisUserMemberRepository
         $user_member->user_officer = auth()->guard('user_officer')->user()->name;
 
         // input request
-        $user_member->id_user_member = $request->id_user_member;
+        $user_member->id_user_member = $request->id;
         $user_member->anamnesa = $request->anamnesa;
         $user_member->riwayat_alergi = $request->riwayat_alergi;
         $user_member->tindakan = $request->tindakan;

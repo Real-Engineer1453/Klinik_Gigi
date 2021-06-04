@@ -16,10 +16,10 @@ class CreateRekamMedisUserMember extends Migration
         Schema::create('rekam_medis_user_member', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_user_member');
-            $table->string('anamnesa')->nullable();
-            $table->string('riwayat_alergi')->nullable();
-            $table->string('tindakan')->nullable();
-            $table->string('terapi_obat')->nullable();
+            $table->string('anamnesa', 255)->nullable();
+            $table->string('riwayat_alergi', 255)->nullable();
+            $table->string('tindakan', 255)->nullable();
+            $table->string('terapi_obat', 255)->nullable();
             $table->string('user_officer', 100)->nullable();
 
             $table->softDeletes();

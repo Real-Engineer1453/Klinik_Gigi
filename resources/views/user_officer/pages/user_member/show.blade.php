@@ -12,7 +12,7 @@ Show Rekam Medis
           <div class="card-header pb-0">
             <div class="">
               <a href="{{ route('user_officer.user_member.index') }}" class="badge bg-danger">Kembali</a>
-              <a href="#" class="badge bg-info">Tambah</a>
+              <a href="{{ route('user_officer.rekam_medis.create', $data_user->id) }}" class="badge bg-info">Tambah</a>
                 <h6 class="mt-2 text-uppercase fw-bolder">Rekam Medis Pasien</h6>
                 <div class="mt-2 d-flex justify-content-between">
                   <h6>{{ $data_user->nama }}</h6>
@@ -38,7 +38,7 @@ Show Rekam Medis
                 </tr>
                 </thead>
                 <tbody>
-              
+
                 @foreach($data as $key => $d)
                   <tr>
                     <td class="align-middle text-center text-sm">
@@ -57,17 +57,17 @@ Show Rekam Medis
                       <p class="text-sm font-weight-bold mb-0">{{ $d->terapi_obat }}</p>
                     </td>
                     <td class="align-middle">
-                      <a href="#" class="badge bg-info">
+                      <a href="{{ route('user_officer.rekam_medis.edit', $d->id) }}" class="badge bg-info">
                         Edit
                       </a>
                     </td>
                   </tr>
                 @endforeach
-              
+
                 </tbody>
               </table>
             </div>
-        </div>  
+        </div>
       </div>
       {{$data->appends(Request::all())->links()}}
     </div>
