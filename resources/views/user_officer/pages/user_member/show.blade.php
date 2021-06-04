@@ -18,13 +18,12 @@ Show Rekam Medis
             <div class="d-flex">
               <h4 class="text-uppercase fw-bolder">Rekam Medis Pasien</h4>
               <div class="mx-auto"></div>
-              <a href="{{ route('user_officer.user_member.index') }}" class="btn btn-danger btn-sm me-3">Kembali</a>
-              <a href="{{ route('user_officer.rekam_medis.create', $data_user->id) }}" class="btn btn-info btn-sm">Tambah</a>
+              <a href="{{ route('user_officer.user_member.index') }}" class="btn btn-danger btn-sm me-3">Back</a>
+              <a href="{{ route('user_officer.rekam_medis.create', $data_user->id) }}" class="btn btn-success btn-sm">Tambah</a>
             </div>
             <div>
-              <h5 class="badge bg-success">Identitas Pasien</h5>
               <div class="d-flex justify-content-between">
-                <h6>{{ $data_user->nama }}</h6>
+                <h6 class="badge bg-primary">{{ $data_user->nama }}</h6>
                 <h6>{{ $data_user->nomor_cm }}</h6>
                 <h6>{{ $data_user->tanggal_lahir }}</h6>
                 <h6>{{ $data_user->alamat }}</h6>
@@ -115,3 +114,41 @@ Show Rekam Medis
     </div>
     </div>
 @endsection
+
+@push('navbar')
+<!-- Navbar -->
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+<div class="container-fluid py-1 px-3">
+    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <div>
+            <h6 class="text-uppercase fw-bolder">
+                Klinik Dokter Gigi Rahma Defi
+            </h6>
+        </div>
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item dropdown px-3 pe-2 d-flex align-items-center">
+                <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user me-sm-1 cursor-pointer"></i>
+                    <span class="d-sm-inline d-none">{{auth()->guard('user_officer')->user()->username}}</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-1 text-center" aria-labelledby="dropdownMenuButton">
+                    <li class="mb-2">
+                        <div class="">
+                            <div class="justify-content-center">
+                                <p class="text-warning mb-0">
+                                    <a href="{{ route('auth.logout_officer') }}" class="">
+                                        <i class="fa fa-clock me-1"></i>
+                                        Logout</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- End Navbar -->
+@endpush

@@ -1,7 +1,7 @@
 @extends('user_officer.layouts.app')
 
 @section('title')
-Data Member
+Tambah data Pasien
 @endsection
 
 @section('content')
@@ -109,3 +109,41 @@ Data Member
     </div>
     </div>
 @endsection
+
+@push('navbar')
+<!-- Navbar -->
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+<div class="container-fluid py-1 px-3">
+    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <div>
+            <h6 class="text-uppercase fw-bolder">
+                Klinik Dokter Gigi Rahma Defi
+            </h6>
+        </div>
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item dropdown px-3 pe-2 d-flex align-items-center">
+                <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user me-sm-1 cursor-pointer"></i>
+                    <span class="d-sm-inline d-none">{{auth()->guard('user_officer')->user()->username}}</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-1 text-center" aria-labelledby="dropdownMenuButton">
+                    <li class="mb-2">
+                        <div class="">
+                            <div class="justify-content-center">
+                                <p class="text-warning mb-0">
+                                    <a href="{{ route('auth.logout_officer') }}" class="">
+                                        <i class="fa fa-clock me-1"></i>
+                                        Logout</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- End Navbar -->
+@endpush

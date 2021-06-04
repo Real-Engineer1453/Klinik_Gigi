@@ -33,15 +33,13 @@
 
 <main class="main-content mt-1 border-radius-lg">
 
-    @include('user_officer.includes.navbar')
+    @stack('navbar')
 
     <div class="container-fluid">
 
     @yield('content')
 
     </div>
-
-    @stack('footer')
 
 </main>
 
