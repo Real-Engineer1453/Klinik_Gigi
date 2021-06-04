@@ -26,7 +26,7 @@ Data Pasien
                 <tr>
                   <th class="text-uppercase text-sm font-weight-bolder ">#</th>
                   <th class="text-uppercase text-sm font-weight-bolder ">Nama</th>
-                    <th class="text-uppercase text-sm font-weight-bolder  ps-2">Nomor CM</th>
+                    <th class="text-center text-uppercase text-sm font-weight-bolder  ps-2">Nomor CM</th>
                     <th class="text-center text-uppercase text-sm font-weight-bolder ">Tgl Lahir</th>
                     <th class="text-center text-uppercase text-sm font-weight-bolder ">Alamat</th>
                     <th class="text-center text-uppercase text-sm font-weight-bolder ">No.HP</th>
