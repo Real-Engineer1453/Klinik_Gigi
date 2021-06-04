@@ -41,5 +41,10 @@ Route::middleware(['auth.user_officer'])->name('user_officer.')->prefix('user_of
     // Dashboard
     Route::get('dashboard', 'UserOfficer\DashboardController@index')->name('dashboard');
     Route::resource('user_member', 'UserOfficer\UserMemberController');
+
+    Route::get('rekam_medis/create/{id}', 'UserOfficer\RekamMedisUserMemberController@create')->name('rekam_medis.create');
+    Route::post('rekam_medis/store/{id}', 'UserOfficer\RekamMedisUserMemberController@store')->name('rekam_medis.store');
+    Route::get('rekam_medis/edit/{id}', 'UserOfficer\RekamMedisUserMemberController@edit')->name('rekam_medis.edit');
+    Route::post('rekam_medis/update/{id}', 'UserOfficer\RekamMedisUserMemberController@store')->name('rekam_medis.update');
 });
 

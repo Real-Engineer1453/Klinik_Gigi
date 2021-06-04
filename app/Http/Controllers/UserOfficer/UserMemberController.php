@@ -35,14 +35,13 @@ class UserMemberController extends Controller
 
     public function store(StoreUserMemberRequest $request)
     {
-//        return 'uye';
         $request->validated();
         $this->userMemberRepository->create_request($request);
 
         return redirect()
             ->route('user_officer.user_member.index')
             ->with([
-                'message' => 'Berita berhasil diupdate',
+                'message' => 'Berita berhasil ditambahkan',
                 'color' => '3',
             ]);
     }
