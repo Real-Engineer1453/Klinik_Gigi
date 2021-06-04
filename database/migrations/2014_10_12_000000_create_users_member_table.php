@@ -16,7 +16,7 @@ class CreateUsersMemberTable extends Migration
         Schema::create('users_member', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->integer('nomor_cm')->unique();
+            $table->string('nomor_cm', 30)->unique();
             $table->date('tanggal_lahir')->nullable();
             $table->string('alamat')->nullable();
             $table->string('nomor_hp')->nullable();

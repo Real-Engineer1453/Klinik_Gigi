@@ -24,11 +24,11 @@ class UpdateUserMemberRequest extends FormRequest
     public function rules()
     {
         return [
-            "nama" => "required|min:2|max:100",
-            "nomor_cm" => 'required|unique:users_member,nomor_cm,'.$this->id,
+            "nama" => "required|min:2|max:255",
+            "nomor_cm" => 'required|numeric|digits_between:1,20|unique:users_member,nomor_cm,'.$this->id,
             "tanggal_lahir" => "required|date",
             "alamat" => "required|max:255",
-            "nomor_hp" => "required|digits_between:10,16"
+            "nomor_hp" => "required|digits_between:10,20"
         ];
     }
 }
