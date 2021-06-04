@@ -5,9 +5,8 @@ Data Member
 @endsection
 
 @section('content')
-<div class="container-fluid py-4">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-white">
+   <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent">
         <li class="breadcrumb-item"><a href="{{ route('user_officer.user_member.index') }}">Data Pasien</a></li>
         <li class="breadcrumb-item active" aria-current="page">Tambah Data</li>
         </ol>
@@ -109,5 +108,4 @@ Data Member
         </div>
     </div>
     </div>
-</div>
 @endsection

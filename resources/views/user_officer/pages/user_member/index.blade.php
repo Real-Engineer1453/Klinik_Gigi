@@ -5,9 +5,8 @@ Data Pasien
 @endsection
 
 @section('content')
-<div class="container-fluid py-4">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-white">
+        <ol class="breadcrumb bg-transparent">
             <li class="breadcrumb-item active" aria-current="page">Data Pasien</li>
         </ol>
     </nav>
@@ -16,7 +15,7 @@ Data Pasien
         <div class="card mb-4">
         <div class="card-header pb-0">
             <div class="d-flex justify-content-between align-items-center">
-                <h6 class="text-uppercase fw-bolder">Tabel Pasien</h6>
+                <h4 class="text-uppercase fw-bolder">Tabel Pasien</h4>
                 <a href="{{ route('user_officer.user_member.create') }}" class="btn btn-success">Tambah Pasien</a>
             </div>
         </div>
@@ -77,7 +76,6 @@ Data Pasien
     </div>
       {{$data->appends(Request::all())->links()}}
     </div>
-</div>
 @endsection
 
 @push('footer')

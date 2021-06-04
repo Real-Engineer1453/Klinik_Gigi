@@ -5,9 +5,8 @@ Show Rekam Medis
 @endsection
 
 @section('content')
-<div class="container-fluid py-4">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-white">
+    <ol class="breadcrumb bg-transparent">
       <li class="breadcrumb-item"><a href="{{ route('user_officer.user_member.index') }}">Data Pasien</a></li>
       <li class="breadcrumb-item active" aria-current="page">Rekam Medis</li>
     </ol>
@@ -16,17 +15,21 @@ Show Rekam Medis
     <div class="col-12">
         <div class="card mb-4">
           <div class="card-header pb-0">
-            <div class="">
-              <a href="{{ route('user_officer.user_member.index') }}" class="badge bg-danger">Kembali</a>
-              <a href="{{ route('user_officer.rekam_medis.create', $data_user->id) }}" class="badge bg-info">Tambah</a>
-                <h6 class="mt-2 text-uppercase fw-bolder">Rekam Medis Pasien</h6>
-                <div class="mt-2 d-flex justify-content-between">
-                  <h6>{{ $data_user->nama }}</h6>
-                  <h6>{{ $data_user->nomor_cm }}</h6>
-                  <h6>{{ $data_user->tanggal_lahir }}</h6>
-                  <h6>{{ $data_user->alamat }}</h6>
-                  <h6>{{ $data_user->nomor_hp }}</h6>
+            <div class="d-flex">
+              <h4 class="text-uppercase fw-bolder">Rekam Medis Pasien</h4>
+              <div class="mx-auto"></div>
+              <a href="{{ route('user_officer.user_member.index') }}" class="btn btn-danger btn-sm me-3">Kembali</a>
+              <a href="{{ route('user_officer.rekam_medis.create', $data_user->id) }}" class="btn btn-info btn-sm">Tambah</a>
             </div>
+            <div>
+              <h5 class="badge bg-success">Identitas Pasien</h5>
+              <div class="d-flex justify-content-between">
+                <h6>{{ $data_user->nama }}</h6>
+                <h6>{{ $data_user->nomor_cm }}</h6>
+                <h6>{{ $data_user->tanggal_lahir }}</h6>
+                <h6>{{ $data_user->alamat }}</h6>
+                <h6>{{ $data_user->nomor_hp }}</h6>
+              </div>
             </div>
         </div>
 
@@ -50,8 +53,36 @@ Show Rekam Medis
                     <td class="align-middle text-center text-sm">
                       <span class="text-secondary text-sm font-weight-bold">{{ ($data->currentpage()-1) * $data->perpage() + $key + 1 }}</span>
                     </td>
-                    <td class="align-middle text-sm">
-                      <span class="text-secondary text-sm font-weight-bold">{{ $d->anamnesa }}</span>
+                    <td class="align-middle text-sm" style="word-wrap: break-word">
+                      <span class="text-secondary text-sm font-weight-bold">{{ Str::limit($d->anamnesa, 20) }}</span>
+                      <button type="button" class="btn btn-sm bg-gradient-primary" data-bs-toggle="modal" 
+                        data-bs-target="#modal{{ $d->id }}">
+                        Launch demo modal
+                      </button>
+
+                      <div class="modal fade" id="modal{{ $d->id }}" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                      <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h6 class="modal-title" id="modal-title-default">Type your modal title</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                            <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
                     </td>
                     <td class="align-middle text-sm">
                       <span class="text-secondary text-sm font-weight-bold">{{ $d->riwayat_alergi }}</span>
@@ -78,5 +109,4 @@ Show Rekam Medis
       {{$data->appends(Request::all())->links()}}
     </div>
     </div>
-</div>
 @endsection

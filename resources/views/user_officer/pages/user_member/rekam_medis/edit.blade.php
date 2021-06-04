@@ -5,10 +5,8 @@
 @endsection
 
 @section('content')
-  <div class="container-fluid py-4">
     <div class="row">
       <div class="col-12">
-
         <div class="card mb-4">
           <h6>{{ $data_member->nama }}</h6>
           <h6>{{ $data_member->nomor_cm }}</h6>
@@ -102,5 +100,4 @@
         </div>
       </div>
     </div>
-  </div>
 @endsection

@@ -5,10 +5,8 @@
 @endsection
 
 @section('content')
-  <div class="container-fluid py-4">
     <div class="row">
       <div class="col-12">
-
         <div class="card mb-4">
           <h6>{{ $data_member->nama }}</h6>
           <h6>{{ $data_member->nomor_cm }}</h6>
@@ -29,7 +27,7 @@
               <label for="anamnesa" class="col-sm-2 col-form-label">anamnesa *</label>
               <div class="col-sm-9">
                 <div class="form-group">
-                  {{ Form::text('anamnesa', null, [
+                  {{ Form::textarea('anamnesa', null, [
                           'id'=>"anamnesa" ,
                           'class' => 'form-control',
                           'placeholder' => '...'
@@ -102,5 +100,4 @@
         </div>
       </div>
     </div>
-  </div>
 @endsection

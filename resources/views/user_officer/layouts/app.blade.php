@@ -35,7 +35,11 @@
 
     @include('user_officer.includes.navbar')
 
+    <div class="container-fluid">
+
     @yield('content')
+
+    </div>
 
     @stack('footer')
 
