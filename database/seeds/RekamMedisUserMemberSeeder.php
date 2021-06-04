@@ -4,6 +4,8 @@ use App\ModelApp\RekamMedisUserMemberModel;
 use App\ModelApp\UserMemberModel;
 use Faker\Factory;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 
 class RekamMedisUserMemberSeeder extends Seeder
 {
@@ -25,10 +27,10 @@ class RekamMedisUserMemberSeeder extends Seeder
               for ($j = 1; $j <= 25; $j++) {
                 $data->create([
                   'id_user_member' => $user_member->id,
-                  'anamnesa' => $faker->name,
-                  'riwayat_alergi' => $faker->address,
-                  'tindakan' => $faker->address,
-                  'terapi_obat' => $faker->phoneNumber,
+                  'anamnesa' => Str::random(20),
+                  'riwayat_alergi' => Str::random(30),
+                  'tindakan' => Str::random(30),
+                  'terapi_obat' =>Str::random(30),
                   'user_officer' => 'zufar',
                 ]);
               }
