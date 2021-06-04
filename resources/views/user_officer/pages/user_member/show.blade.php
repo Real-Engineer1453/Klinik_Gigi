@@ -6,6 +6,12 @@ Show Rekam Medis
 
 @section('content')
 <div class="container-fluid py-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white">
+      <li class="breadcrumb-item"><a href="{{ route('user_officer.user_member.index') }}">Data Pasien</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Rekam Medis</li>
+    </ol>
+  </nav>
     <div class="row">
     <div class="col-12">
         <div class="card mb-4">
@@ -27,14 +33,14 @@ Show Rekam Medis
         <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0">
               <table class="table align-items-center mb-0">
-                <thead>
+                <thead class="table-info">
                 <tr>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">#</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">anamnesa</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">riwayat_alergi</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">tindakan</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">terapi_obat</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">action</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">#</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">anamnesa</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">riwayat_alergi</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">tindakan</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">terapi_obat</th>
+                  <th class="text-uppercase text-sm font-weight-bolder">action</th>
                 </tr>
                 </thead>
                 <tbody>

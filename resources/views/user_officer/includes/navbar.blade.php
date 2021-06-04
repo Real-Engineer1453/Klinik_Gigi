@@ -9,13 +9,9 @@
             </div>
         </div>
         <div class="mx-auto">
-            <a class="nav-link
-                @if (\Request::is('user_officer/user_member*'))
-                active
-                @endif"
-                href="{{ route('user_officer.user_member.index') }}">
-                <span class="nav-link-text ms-1 fw-bolder text-uppercase">Data Pasien</span>
-            </a>
+            <h6 class="text-uppercase fw-bolder">
+                Klinik Dokter Gigi Rahma Defi
+            </h6>
         </div>
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item dropdown px-3 pe-2 d-flex align-items-center">
