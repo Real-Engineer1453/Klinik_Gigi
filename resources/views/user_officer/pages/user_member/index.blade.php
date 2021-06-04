@@ -1,7 +1,7 @@
 @extends('user_officer.layouts.app')
 
 @section('title')
-Data Member
+Data Pasien
 @endsection
 
 @section('content')
