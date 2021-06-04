@@ -6,6 +6,11 @@ Data Pasien
 
 @section('content')
 <div class="container-fluid py-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white">
+            <li class="breadcrumb-item active" aria-current="page">Data Pasien</li>
+        </ol>
+    </nav>
     <div class="row">
     <div class="col-12">
         <div class="card mb-4">
@@ -18,15 +23,15 @@ Data Pasien
         <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0">
             <table class="table align-items-center mb-0">
-                <thead>
+                <thead class="table-info">
                 <tr>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">#</th>
-                  <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Nama</th>
-                    <th class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">Nomor CM</th>
-                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Tgl Lahir</th>
-                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">Alamat</th>
-                    <th class="text-center text-uppercase text-secondary text-sm font-weight-bolder opacity-7">No.HP</th>
-                    <th class="text-secondary opacity-7"></th>
+                  <th class="text-uppercase text-sm font-weight-bolder ">#</th>
+                  <th class="text-uppercase text-sm font-weight-bolder ">Nama</th>
+                    <th class="text-uppercase text-sm font-weight-bolder  ps-2">Nomor CM</th>
+                    <th class="text-center text-uppercase text-sm font-weight-bolder ">Tgl Lahir</th>
+                    <th class="text-center text-uppercase text-sm font-weight-bolder ">Alamat</th>
+                    <th class="text-center text-uppercase text-sm font-weight-bolder ">No.HP</th>
+                    <th class=""></th>
                 </tr>
                 </thead>
                 <tbody>
