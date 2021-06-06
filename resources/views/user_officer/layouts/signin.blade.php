@@ -29,7 +29,7 @@
     </title>
 </head>
 
-<body class="g-sidenav-show  bg-white">
+<body class=" bg-gradient-info">
     @yield('content')
     @include('user_officer.includes.script')
 

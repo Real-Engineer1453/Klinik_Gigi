@@ -35,10 +35,10 @@ Coded by www.creative-tim.com
         <div class="page-header section-height-75 relative" style="background-image: url('{{ asset('front_office/assets/img/curved-images/curved.jpg')}}')">
         <div class="container">
             <div class="row">
-            <div class="col-lg-7 text-center mx-auto">
-                <h1 class="text-white fw-bolder pt-3 mt-n5">Klinik Dokter Gigi</h1>
-                <h2 class="text-white fw-bold mt-3">Rahma Defi</h2>
-                <a href="{{ route ('login_officer')}}" class="btn btn-sm bg-gradient-info btn-round mb-0 me-1 mt-4 mt-md-0">Login</a>
+            <div class="col-lg-12 text-center mx-auto">
+                <h1 class="text-uppercase display-3 text-white fw-bolder mt-n5">Klinik</h1>
+                <h2 class="text-white text-uppercase fw-bold pt-2">Dokter Gigi Rahma Defi</h2>
+                <a href="{{ route ('login_officer')}}" class="btn btn-sm bg-gradient-info btn-round me-1 mt-3">Login</a>
             </div>
             </div>
         </div>
