@@ -54,7 +54,7 @@ class RekamMedisUserMemberController extends Controller
         $this->rekamMedisUserMemberRepository->update_request($id, $request);
 
         return redirect()
-            ->route('user_officer.user_member.index')
+            ->route('user_officer.user_member.show', $request->id)
             ->with([
                 'message' => 'Data berhasil diupdate',
                 'color' => '3',

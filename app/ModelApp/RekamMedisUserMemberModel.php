@@ -14,6 +14,8 @@ class RekamMedisUserMemberModel extends Authenticatable
 
     protected $table = 'rekam_medis_user_member';
 
+    protected $guard = 'user_member';
+
     protected $fillable = [
         'id',
         'id_user_member',

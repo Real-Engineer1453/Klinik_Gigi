@@ -26,7 +26,7 @@ Edit Rekam Medis
             </div>
           </div>
           <div class="card-body px-0 pt-0 pb-2 mt-4">
-            {{ Form::open(['route' => ['user_officer.rekam_medis.store', $data_member->id],'method'=>'POST','enctype'=>"multipart/form-data",'files'=>true]) }}
+            {{ Form::open(['route' => ['user_officer.rekam_medis.update', $data->id],'method'=>'PUT','enctype'=>"multipart/form-data",'files'=>true]) }}
             {{ Form::hidden('id',$data_member->id) }}
 
             <div class="row ms-auto">

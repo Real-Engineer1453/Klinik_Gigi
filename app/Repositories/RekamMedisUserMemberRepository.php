@@ -20,36 +20,37 @@ class RekamMedisUserMemberRepository
 
     public function create_request($request)
     {
-        $user_member = new RekamMedisUserMemberModel;
+        $rm_user_member = new RekamMedisUserMemberModel;
 
-        // default
-        $user_member->user_officer = auth()->guard('user_officer')->user()->name;
+          // default
+        $rm_user_member->user_officer = auth()->guard('user_officer')->user()->name;
 
-        // input request
-        $user_member->id_user_member = $request->id;
-        $user_member->anamnesa = $request->anamnesa;
-        $user_member->riwayat_alergi = $request->riwayat_alergi;
-        $user_member->tindakan = $request->tindakan;
-        $user_member->terapi_obat = $request->terapi_obat;
+          // input request
+        $rm_user_member->id_user_member = $request->id;
+        $rm_user_member->anamnesa = $request->anamnesa;
+        $rm_user_member->riwayat_alergi = $request->riwayat_alergi;
+        $rm_user_member->tindakan = $request->tindakan;
+        $rm_user_member->terapi_obat = $request->terapi_obat;
 
-        return $user_member->save();
+        return $rm_user_member->save();
     }
 
     public function update_request($id, $request)
     {
-      $user_member = RekamMedisUserMemberModel::findOrFail($id);
+        $rm_user_member = RekamMedisUserMemberModel::findOrFail($id);
 
-      // default
-      $user_member->user_officer = auth()->guard('user_officer')->user()->name;
+        // default
+        $rm_user_member->user_officer = auth()->guard('user_officer')->user()->name;
 
-      // input request
-      $user_member->id_user_member = $request->id_user_member;
-      $user_member->anamnesa = $request->anamnesa;
-      $user_member->riwayat_alergi = $request->riwayat_alergi;
-      $user_member->tindakan = $request->tindakan;
-      $user_member->terapi_obat = $request->terapi_obat;
+        // input request
+        $rm_user_member->id_user_member = $request->id;
+        $rm_user_member->anamnesa = $request->anamnesa;
+        $rm_user_member->riwayat_alergi = $request->riwayat_alergi;
+        $rm_user_member->tindakan = $request->tindakan;
+        $rm_user_member->terapi_obat = $request->terapi_obat;
 
-      return $user_member->save();
+      return $rm_user_member->save();
+//      return $rm_user_member;
     }
 
     public function get_paginate($paginate)
