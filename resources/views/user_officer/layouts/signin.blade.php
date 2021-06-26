@@ -29,7 +29,8 @@
     </title>
 </head>
 
-<body class=" bg-gradient-info">
+<body class="" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 100%);
+">
     @yield('content')
     @include('user_officer.includes.script')
 
